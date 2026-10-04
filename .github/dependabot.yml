@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
+
+  # The root manifest and every example (pnpm workspace, one lockfile).
+  - package-ecosystem: npm
+    directories: ["/", "/examples/*"]
+    schedule:
+      interval: weekly
+    groups:
+      dev-dependencies:
+        dependency-type: development
+      dependencies:
+        dependency-type: production
+    ignore:
+      # express-basic pins TypeScript 6 on purpose: typescript-eslint needs the
+      # JavaScript compiler API, which TypeScript 7 does not ship.
+      - dependency-name: typescript
+        update-types: ["version-update:semver-major"]

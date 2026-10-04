@@ -1,0 +1,24 @@
+{
+  "name": "example-express-basic",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "node --import tsx --test test/*.test.ts",
+    "start": "tsx src/server.ts",
+    "check": "pnpm typecheck && pnpm lint && pnpm test"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "gdp-ts": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "eslint": "^10.12.0",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.0"
+  }
+}

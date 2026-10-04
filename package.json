@@ -1,0 +1,97 @@
+{
+  "name": "gdp-ts",
+  "version": "0.1.0",
+  "description": "Ghosts of Departed Proofs for TypeScript: authorization (and other checks) whose results the type checker can see.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rauchg/gdp-ts.git"
+  },
+  "homepage": "https://github.com/rauchg/gdp-ts#readme",
+  "bugs": "https://github.com/rauchg/gdp-ts/issues",
+  "packageManager": "pnpm@12.1.0",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./lint/plugin": {
+      "types": "./src/lint/plugin.ts",
+      "default": "./src/lint/plugin.ts"
+    },
+    "./lint/eslint": {
+      "types": "./src/lint/eslint.ts",
+      "default": "./src/lint/eslint.ts"
+    },
+    "./lint/oxlint": {
+      "types": "./src/lint/oxlint.ts",
+      "default": "./src/lint/oxlint.ts"
+    }
+  },
+  "publishConfig": {
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "./lint/plugin": {
+        "types": "./dist/lint/plugin.d.ts",
+        "default": "./dist/lint/plugin.js"
+      },
+      "./lint/eslint": {
+        "types": "./dist/lint/eslint.d.ts",
+        "default": "./dist/lint/eslint.js"
+      },
+      "./lint/oxlint": {
+        "types": "./dist/lint/oxlint.d.ts",
+        "default": "./dist/lint/oxlint.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "pnpm run build",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/*.test.ts",
+    "check": "pnpm typecheck && pnpm test && pnpm -r --filter './examples/*' check"
+  },
+  "keywords": [
+    "typescript",
+    "authorization",
+    "ghosts-of-departed-proofs",
+    "gdp",
+    "phantom-types",
+    "type-safety",
+    "eslint-plugin",
+    "oxlint"
+  ],
+  "peerDependencies": {
+    "typescript": ">=5.4",
+    "eslint": ">=9",
+    "oxlint": ">=1.86"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    },
+    "eslint": {
+      "optional": true
+    },
+    "oxlint": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}

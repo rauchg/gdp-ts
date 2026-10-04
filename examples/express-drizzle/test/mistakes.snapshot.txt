@@ -1,0 +1,20 @@
+reading the setting needs a view proof
+  TS2554 Expected 2 arguments, but got 1.
+
+a raw id cannot even be passed; it has no name to prove things about
+  TS2345 Argument of type 'ProjectId' is not assignable to parameter of type 'Named<M, ProjectId>'.
+
+the proof is about `project`, not `other`
+  TS2345 Argument of type 'CanViewProtection<N, M>' is not assignable to parameter of type 'CanViewProtection<N, O>'.
+
+a view proof is not a manage proof (CanManageProtection ⊂ CanViewProtection, not the reverse)
+  TS2322 Type 'CanViewProtection<N, M>' is not assignable to type 'CanManageProtection<N, M>'.
+
+forgot the plan check
+  TS2741 Property 'plan' is missing in type '{ manage: CanManageProtection<N, M>; }' but required in type '{ manage: CanManageProtection<N, M>; plan: PlanIncludesPasswordProtection<M>; }'.
+
+a token for one URL does not unlock another
+  TS2345 Argument of type 'CanVisitUrl<N>' is not assignable to parameter of type 'CanVisitUrl<M>'.
+
+a token needs a password check first
+  TS2554 Expected 2 arguments, but got 1.

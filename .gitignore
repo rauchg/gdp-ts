@@ -1,0 +1,6 @@
+node_modules
+dist
+*.tsbuildinfo
+*.unsuppressed.tmp.ts
+.DS_Store
+.lint-tmp

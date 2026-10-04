@@ -1,0 +1,19 @@
+{
+  // Standalone (does not extend tsconfig.base.json, which uses TS 5.7+ options)
+  // so the type tests can run on every supported TypeScript version:
+  //   pnpm dlx --package=typescript@5.4 tsc -p tsconfig.compat.json
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": []
+  },
+  "files": ["src/index.ts", "test/types.ts"]
+}
