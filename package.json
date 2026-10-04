@@ -1,0 +1,63 @@
+{
+  "name": "gdp-ts",
+  "version": "0.1.0",
+  "description": "Ghosts of Departed Proofs for TypeScript: authorization (and other checks) whose results the type checker can see.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rauchg/gdp-ts.git"
+  },
+  "homepage": "https://github.com/rauchg/gdp-ts#readme",
+  "bugs": "https://github.com/rauchg/gdp-ts/issues",
+  "packageManager": "pnpm@12.1.0",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "publishConfig": {
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "src/index.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "pnpm run build",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/*.test.ts",
+    "check": "pnpm typecheck && pnpm test && pnpm -r --filter './examples/*' check"
+  },
+  "keywords": [
+    "typescript",
+    "authorization",
+    "ghosts-of-departed-proofs",
+    "gdp",
+    "phantom-types",
+    "type-safety"
+  ],
+  "peerDependencies": {
+    "typescript": ">=5.4"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}

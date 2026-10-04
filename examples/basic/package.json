@@ -1,0 +1,19 @@
+{
+  "name": "example-basic",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "start": "tsx src/main.ts",
+    "check": "pnpm typecheck && pnpm test && pnpm start"
+  },
+  "dependencies": {
+    "gdp-ts": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

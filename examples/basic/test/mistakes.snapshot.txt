@@ -1,0 +1,35 @@
+the proof is about project A, not project B
+  TS2345 Argument of type 'CanViewProtection<N, M>' is not assignable to parameter of type 'CanViewProtection<N, O>'.
+
+a raw id is not a named value; name it first
+  TS2345 Argument of type 'ProjectId' is not assignable to parameter of type 'Named<M, ProjectId>'.
+
+no proof at all
+  TS2554 Expected 2 arguments, but got 1.
+
+`null` is what a failed check returns; you must handle it
+  TS2345 Argument of type 'CanViewProtection<N, M> | null' is not assignable to parameter of type 'CanViewProtection<N, M>'.
+
+you cannot build a proof by hand; only proofs/ can
+  TS2322 Type '{ kind: "UserIsProjectAdmin"; }' is not assignable to type 'CanViewProtection<N, M>'.
+
+viewing is not managing: a Viewer's proof cannot change the setting
+  TS2322 Type 'CanViewProtection<N, M>' is not assignable to type 'CanManageProtection<N, M>'.
+
+forgot the plan check (Password Protection is not on Hobby)
+  TS2741 Property 'plan' is missing in type '{ manage: CanManageProtection<N, M>; }' but required in type '{ manage: CanManageProtection<N, M>; plan: PlanIncludesPasswordProtection<M>; }'.
+
+the plan check was for project B
+  TS2322 Type 'PlanIncludesPasswordProtection<O>' is not assignable to type 'PlanIncludesPasswordProtection<M>'.
+
+the manage proof is about another user; `updatedBy` would name the wrong person
+  TS2719 Type 'CanManageProtection<N, M>' is not assignable to type 'CanManageProtection<N, M>'. Two different types with this name exist, but they are unrelated.
+
+a token for one URL does not unlock another, even one for the same deployment
+  TS2345 Argument of type 'CanVisitUrl<N>' is not assignable to parameter of type 'CanVisitUrl<M>'.
+
+issuing a token needs a password check
+  TS2554 Expected 2 arguments, but got 1.
+
+the password was checked for URL A, so the token can only be for URL A
+  TS2345 Argument of type 'PasswordAccepted<N>' is not assignable to parameter of type 'PasswordAccepted<M>'.

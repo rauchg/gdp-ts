@@ -1,0 +1,3580 @@
+[
+  {
+    "label": "7.0.2",
+    "tsVersion": "7.0.2",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-1000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 1000,
+      "seed": 1,
+      "files": 1001,
+      "lines": 25972,
+      "nonBlankLines": 22497,
+      "packages": 6,
+      "resourceModules": 83,
+      "crossPackageLinks": 8,
+      "mistakeModules": 3,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 1058,
+        "lines": 37587,
+        "types": 18794,
+        "instantiations": 24499,
+        "memoryKB": 68677,
+        "checkSeconds": 0.047,
+        "totalSeconds": 0.121
+      },
+      {
+        "files": 1058,
+        "lines": 37587,
+        "types": 18794,
+        "instantiations": 24499,
+        "memoryKB": 68614,
+        "checkSeconds": 0.052,
+        "totalSeconds": 0.124
+      },
+      {
+        "files": 1058,
+        "lines": 37587,
+        "types": 18794,
+        "instantiations": 24499,
+        "memoryKB": 68794,
+        "checkSeconds": 0.06,
+        "totalSeconds": 0.136
+      },
+      {
+        "files": 1058,
+        "lines": 37587,
+        "types": 18794,
+        "instantiations": 24499,
+        "memoryKB": 68842,
+        "checkSeconds": 0.057,
+        "totalSeconds": 0.136
+      },
+      {
+        "files": 1058,
+        "lines": 37587,
+        "types": 18794,
+        "instantiations": 24499,
+        "memoryKB": 68638,
+        "checkSeconds": 0.06,
+        "totalSeconds": 0.147
+      }
+    ],
+    "median": {
+      "files": 1058,
+      "lines": 37587,
+      "types": 18794,
+      "instantiations": 24499,
+      "memoryKB": 68677,
+      "checkSeconds": 0.057,
+      "totalSeconds": 0.136
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2",
+    "tsVersion": "7.0.2",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-5000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 5000,
+      "seed": 1,
+      "files": 5105,
+      "lines": 132634,
+      "nonBlankLines": 114886,
+      "packages": 32,
+      "resourceModules": 425,
+      "crossPackageLinks": 59,
+      "mistakeModules": 17,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 5162,
+        "lines": 148353,
+        "types": 88225,
+        "instantiations": 124973,
+        "memoryKB": 321205,
+        "checkSeconds": 0.34,
+        "totalSeconds": 0.673
+      },
+      {
+        "files": 5162,
+        "lines": 148353,
+        "types": 88225,
+        "instantiations": 124973,
+        "memoryKB": 321291,
+        "checkSeconds": 0.307,
+        "totalSeconds": 0.624
+      },
+      {
+        "files": 5162,
+        "lines": 148353,
+        "types": 88225,
+        "instantiations": 124973,
+        "memoryKB": 321293,
+        "checkSeconds": 0.305,
+        "totalSeconds": 1.082
+      },
+      {
+        "files": 5162,
+        "lines": 148353,
+        "types": 88225,
+        "instantiations": 124973,
+        "memoryKB": 320645,
+        "checkSeconds": 0.307,
+        "totalSeconds": 0.988
+      },
+      {
+        "files": 5162,
+        "lines": 148353,
+        "types": 88225,
+        "instantiations": 124973,
+        "memoryKB": 321355,
+        "checkSeconds": 0.325,
+        "totalSeconds": 0.668
+      }
+    ],
+    "median": {
+      "files": 5162,
+      "lines": 148353,
+      "types": 88225,
+      "instantiations": 124973,
+      "memoryKB": 321291,
+      "checkSeconds": 0.307,
+      "totalSeconds": 0.673
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2",
+    "tsVersion": "7.0.2",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-10000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 259908,
+      "nonBlankLines": 225129,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 170744,
+        "instantiations": 244075,
+        "memoryKB": 619366,
+        "checkSeconds": 0.525,
+        "totalSeconds": 1.932
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 170744,
+        "instantiations": 244075,
+        "memoryKB": 619525,
+        "checkSeconds": 0.566,
+        "totalSeconds": 1.896
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 170744,
+        "instantiations": 244075,
+        "memoryKB": 619620,
+        "checkSeconds": 0.551,
+        "totalSeconds": 1.917
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 170744,
+        "instantiations": 244075,
+        "memoryKB": 619592,
+        "checkSeconds": 0.561,
+        "totalSeconds": 1.922
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 170744,
+        "instantiations": 244075,
+        "memoryKB": 619509,
+        "checkSeconds": 0.554,
+        "totalSeconds": 1.91
+      }
+    ],
+    "median": {
+      "files": 10058,
+      "lines": 280523,
+      "types": 170744,
+      "instantiations": 244075,
+      "memoryKB": 619525,
+      "checkSeconds": 0.554,
+      "totalSeconds": 1.917
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2",
+    "tsVersion": "7.0.2",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-20000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 20000,
+      "seed": 1,
+      "files": 20069,
+      "lines": 521612,
+      "nonBlankLines": 451813,
+      "packages": 124,
+      "resourceModules": 1672,
+      "crossPackageLinks": 239,
+      "mistakeModules": 66,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 20126,
+        "lines": 552295,
+        "types": 340987,
+        "instantiations": 490398,
+        "memoryKB": 1234886,
+        "checkSeconds": 1.149,
+        "totalSeconds": 3.972
+      },
+      {
+        "files": 20126,
+        "lines": 552295,
+        "types": 340987,
+        "instantiations": 490398,
+        "memoryKB": 1236453,
+        "checkSeconds": 1.169,
+        "totalSeconds": 4.062
+      },
+      {
+        "files": 20126,
+        "lines": 552295,
+        "types": 340987,
+        "instantiations": 490398,
+        "memoryKB": 1236051,
+        "checkSeconds": 1.272,
+        "totalSeconds": 3.838
+      },
+      {
+        "files": 20126,
+        "lines": 552295,
+        "types": 340987,
+        "instantiations": 490398,
+        "memoryKB": 1236176,
+        "checkSeconds": 1.199,
+        "totalSeconds": 4.077
+      },
+      {
+        "files": 20126,
+        "lines": 552295,
+        "types": 340987,
+        "instantiations": 490398,
+        "memoryKB": 1234801,
+        "checkSeconds": 1.168,
+        "totalSeconds": 4.041
+      }
+    ],
+    "median": {
+      "files": 20126,
+      "lines": 552295,
+      "types": 340987,
+      "instantiations": 490398,
+      "memoryKB": 1236051,
+      "checkSeconds": 1.169,
+      "totalSeconds": 4.041
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2",
+    "tsVersion": "7.0.2",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-1000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 1000,
+      "seed": 1,
+      "files": 1001,
+      "lines": 34390,
+      "nonBlankLines": 30257,
+      "packages": 6,
+      "resourceModules": 83,
+      "crossPackageLinks": 8,
+      "mistakeModules": 3,
+      "proofKinds": 575,
+      "nameCallSites": 989,
+      "tsExpectErrorLines": 12
+    },
+    "runs": [
+      {
+        "files": 1059,
+        "lines": 46174,
+        "types": 183032,
+        "instantiations": 419383,
+        "memoryKB": 252702,
+        "checkSeconds": 0.319,
+        "totalSeconds": 0.399
+      },
+      {
+        "files": 1059,
+        "lines": 46174,
+        "types": 183032,
+        "instantiations": 419383,
+        "memoryKB": 252761,
+        "checkSeconds": 0.325,
+        "totalSeconds": 0.388
+      },
+      {
+        "files": 1059,
+        "lines": 46174,
+        "types": 183032,
+        "instantiations": 419383,
+        "memoryKB": 253025,
+        "checkSeconds": 0.353,
+        "totalSeconds": 0.423
+      },
+      {
+        "files": 1059,
+        "lines": 46174,
+        "types": 183032,
+        "instantiations": 419383,
+        "memoryKB": 252765,
+        "checkSeconds": 0.342,
+        "totalSeconds": 0.423
+      },
+      {
+        "files": 1059,
+        "lines": 46174,
+        "types": 183032,
+        "instantiations": 419383,
+        "memoryKB": 252726,
+        "checkSeconds": 0.356,
+        "totalSeconds": 0.432
+      }
+    ],
+    "median": {
+      "files": 1059,
+      "lines": 46174,
+      "types": 183032,
+      "instantiations": 419383,
+      "memoryKB": 252761,
+      "checkSeconds": 0.342,
+      "totalSeconds": 0.423
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2",
+    "tsVersion": "7.0.2",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-5000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 5000,
+      "seed": 1,
+      "files": 5105,
+      "lines": 175752,
+      "nonBlankLines": 154636,
+      "packages": 32,
+      "resourceModules": 425,
+      "crossPackageLinks": 59,
+      "mistakeModules": 17,
+      "proofKinds": 2943,
+      "nameCallSites": 5080,
+      "tsExpectErrorLines": 68
+    },
+    "runs": [
+      {
+        "files": 5163,
+        "lines": 191640,
+        "types": 928342,
+        "instantiations": 2159827,
+        "memoryKB": 1242706,
+        "checkSeconds": 1.777,
+        "totalSeconds": 2.112
+      },
+      {
+        "files": 5163,
+        "lines": 191640,
+        "types": 928342,
+        "instantiations": 2159827,
+        "memoryKB": 1242293,
+        "checkSeconds": 1.653,
+        "totalSeconds": 2.295
+      },
+      {
+        "files": 5163,
+        "lines": 191640,
+        "types": 928342,
+        "instantiations": 2159827,
+        "memoryKB": 1241977,
+        "checkSeconds": 1.694,
+        "totalSeconds": 2.375
+      },
+      {
+        "files": 5163,
+        "lines": 191640,
+        "types": 928342,
+        "instantiations": 2159827,
+        "memoryKB": 1242198,
+        "checkSeconds": 1.888,
+        "totalSeconds": 2.564
+      },
+      {
+        "files": 5163,
+        "lines": 191640,
+        "types": 928342,
+        "instantiations": 2159827,
+        "memoryKB": 1241596,
+        "checkSeconds": 1.618,
+        "totalSeconds": 2.263
+      }
+    ],
+    "median": {
+      "files": 5163,
+      "lines": 191640,
+      "types": 928342,
+      "instantiations": 2159827,
+      "memoryKB": 1242198,
+      "checkSeconds": 1.694,
+      "totalSeconds": 2.295
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2",
+    "tsVersion": "7.0.2",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-10000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 344442,
+      "nonBlankLines": 303061,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 5769,
+      "nameCallSites": 9961,
+      "tsExpectErrorLines": 132
+    },
+    "runs": [
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1816686,
+        "instantiations": 4233783,
+        "memoryKB": 2425267,
+        "checkSeconds": 3.402,
+        "totalSeconds": 4.653
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1816686,
+        "instantiations": 4233783,
+        "memoryKB": 2424285,
+        "checkSeconds": 3.251,
+        "totalSeconds": 4.65
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1816686,
+        "instantiations": 4233783,
+        "memoryKB": 2424370,
+        "checkSeconds": 3.283,
+        "totalSeconds": 4.694
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1816686,
+        "instantiations": 4233783,
+        "memoryKB": 2424075,
+        "checkSeconds": 3.321,
+        "totalSeconds": 4.678
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1816686,
+        "instantiations": 4233783,
+        "memoryKB": 2423630,
+        "checkSeconds": 3.849,
+        "totalSeconds": 5.004
+      }
+    ],
+    "median": {
+      "files": 10059,
+      "lines": 365226,
+      "types": 1816686,
+      "instantiations": 4233783,
+      "memoryKB": 2424285,
+      "checkSeconds": 3.321,
+      "totalSeconds": 4.678
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2",
+    "tsVersion": "7.0.2",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-20000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 20000,
+      "seed": 1,
+      "files": 20069,
+      "lines": 691304,
+      "nonBlankLines": 608253,
+      "packages": 124,
+      "resourceModules": 1672,
+      "crossPackageLinks": 239,
+      "mistakeModules": 66,
+      "proofKinds": 11580,
+      "nameCallSites": 19997,
+      "tsExpectErrorLines": 264
+    },
+    "runs": [
+      {
+        "files": 20127,
+        "lines": 722156,
+        "types": 3645789,
+        "instantiations": 8501850,
+        "memoryKB": 4854147,
+        "checkSeconds": 7.222,
+        "totalSeconds": 10.149
+      },
+      {
+        "files": 20127,
+        "lines": 722156,
+        "types": 3645789,
+        "instantiations": 8501850,
+        "memoryKB": 4857994,
+        "checkSeconds": 6.951,
+        "totalSeconds": 8.198
+      },
+      {
+        "files": 20127,
+        "lines": 722156,
+        "types": 3645789,
+        "instantiations": 8501850,
+        "memoryKB": 4857717,
+        "checkSeconds": 6.725,
+        "totalSeconds": 9.604
+      },
+      {
+        "files": 20127,
+        "lines": 722156,
+        "types": 3645789,
+        "instantiations": 8501850,
+        "memoryKB": 4857313,
+        "checkSeconds": 6.73,
+        "totalSeconds": 8.012
+      },
+      {
+        "files": 20127,
+        "lines": 722156,
+        "types": 3645789,
+        "instantiations": 8501850,
+        "memoryKB": 4856786,
+        "checkSeconds": 6.775,
+        "totalSeconds": 8.046
+      }
+    ],
+    "median": {
+      "files": 20127,
+      "lines": 722156,
+      "types": 3645789,
+      "instantiations": 8501850,
+      "memoryKB": 4857313,
+      "checkSeconds": 6.775,
+      "totalSeconds": 8.198
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "baseline-1000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 1000,
+      "seed": 1,
+      "files": 1001,
+      "lines": 25972,
+      "nonBlankLines": 22497,
+      "packages": 6,
+      "resourceModules": 83,
+      "crossPackageLinks": 8,
+      "mistakeModules": 3,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 1058,
+        "lines": 37587,
+        "types": 10857,
+        "instantiations": 17090,
+        "memoryKB": 59222,
+        "checkSeconds": 0.058,
+        "totalSeconds": 0.204
+      },
+      {
+        "files": 1058,
+        "lines": 37587,
+        "types": 10857,
+        "instantiations": 17090,
+        "memoryKB": 59199,
+        "checkSeconds": 0.062,
+        "totalSeconds": 0.243
+      },
+      {
+        "files": 1058,
+        "lines": 37587,
+        "types": 10857,
+        "instantiations": 17090,
+        "memoryKB": 59235,
+        "checkSeconds": 0.062,
+        "totalSeconds": 0.208
+      },
+      {
+        "files": 1058,
+        "lines": 37587,
+        "types": 10857,
+        "instantiations": 17090,
+        "memoryKB": 59212,
+        "checkSeconds": 0.061,
+        "totalSeconds": 0.216
+      },
+      {
+        "files": 1058,
+        "lines": 37587,
+        "types": 10857,
+        "instantiations": 17090,
+        "memoryKB": 59194,
+        "checkSeconds": 0.062,
+        "totalSeconds": 0.216
+      }
+    ],
+    "median": {
+      "files": 1058,
+      "lines": 37587,
+      "types": 10857,
+      "instantiations": 17090,
+      "memoryKB": 59212,
+      "checkSeconds": 0.062,
+      "totalSeconds": 0.216
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "baseline-5000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 5000,
+      "seed": 1,
+      "files": 5105,
+      "lines": 132634,
+      "nonBlankLines": 114886,
+      "packages": 32,
+      "resourceModules": 425,
+      "crossPackageLinks": 59,
+      "mistakeModules": 17,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 5162,
+        "lines": 148353,
+        "types": 52328,
+        "instantiations": 89214,
+        "memoryKB": 277549,
+        "checkSeconds": 0.346,
+        "totalSeconds": 1.041
+      },
+      {
+        "files": 5162,
+        "lines": 148353,
+        "types": 52328,
+        "instantiations": 89214,
+        "memoryKB": 277204,
+        "checkSeconds": 0.333,
+        "totalSeconds": 1.048
+      },
+      {
+        "files": 5162,
+        "lines": 148353,
+        "types": 52328,
+        "instantiations": 89214,
+        "memoryKB": 277422,
+        "checkSeconds": 0.317,
+        "totalSeconds": 1.039
+      },
+      {
+        "files": 5162,
+        "lines": 148353,
+        "types": 52328,
+        "instantiations": 89214,
+        "memoryKB": 277455,
+        "checkSeconds": 0.35,
+        "totalSeconds": 1.062
+      },
+      {
+        "files": 5162,
+        "lines": 148353,
+        "types": 52328,
+        "instantiations": 89214,
+        "memoryKB": 277296,
+        "checkSeconds": 0.332,
+        "totalSeconds": 1.059
+      }
+    ],
+    "median": {
+      "files": 5162,
+      "lines": 148353,
+      "types": 52328,
+      "instantiations": 89214,
+      "memoryKB": 277422,
+      "checkSeconds": 0.333,
+      "totalSeconds": 1.048
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "baseline-10000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 259908,
+      "nonBlankLines": 225129,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 101472,
+        "instantiations": 174440,
+        "memoryKB": 534882,
+        "checkSeconds": 0.982,
+        "totalSeconds": 3.601
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 101472,
+        "instantiations": 174440,
+        "memoryKB": 534946,
+        "checkSeconds": 0.665,
+        "totalSeconds": 2.208
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 101472,
+        "instantiations": 174440,
+        "memoryKB": 535172,
+        "checkSeconds": 0.669,
+        "totalSeconds": 2.043
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 101472,
+        "instantiations": 174440,
+        "memoryKB": 534674,
+        "checkSeconds": 0.663,
+        "totalSeconds": 2.028
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 101472,
+        "instantiations": 174440,
+        "memoryKB": 534891,
+        "checkSeconds": 0.663,
+        "totalSeconds": 2.035
+      }
+    ],
+    "median": {
+      "files": 10058,
+      "lines": 280523,
+      "types": 101472,
+      "instantiations": 174440,
+      "memoryKB": 534891,
+      "checkSeconds": 0.665,
+      "totalSeconds": 2.043
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "baseline-20000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 20000,
+      "seed": 1,
+      "files": 20069,
+      "lines": 521612,
+      "nonBlankLines": 451813,
+      "packages": 124,
+      "resourceModules": 1672,
+      "crossPackageLinks": 239,
+      "mistakeModules": 66,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 20126,
+        "lines": 552295,
+        "types": 203083,
+        "instantiations": 351118,
+        "memoryKB": 1068934,
+        "checkSeconds": 2.104,
+        "totalSeconds": 7.641
+      },
+      {
+        "files": 20126,
+        "lines": 552295,
+        "types": 203083,
+        "instantiations": 351118,
+        "memoryKB": 1068713,
+        "checkSeconds": 1.41,
+        "totalSeconds": 4.23
+      },
+      {
+        "files": 20126,
+        "lines": 552295,
+        "types": 203083,
+        "instantiations": 351118,
+        "memoryKB": 1068826,
+        "checkSeconds": 1.544,
+        "totalSeconds": 4.397
+      },
+      {
+        "files": 20126,
+        "lines": 552295,
+        "types": 203083,
+        "instantiations": 351118,
+        "memoryKB": 1068998,
+        "checkSeconds": 1.391,
+        "totalSeconds": 4.264
+      },
+      {
+        "files": 20126,
+        "lines": 552295,
+        "types": 203083,
+        "instantiations": 351118,
+        "memoryKB": 1068767,
+        "checkSeconds": 1.388,
+        "totalSeconds": 4.191
+      }
+    ],
+    "median": {
+      "files": 20126,
+      "lines": 552295,
+      "types": 203083,
+      "instantiations": 351118,
+      "memoryKB": 1068826,
+      "checkSeconds": 1.41,
+      "totalSeconds": 4.264
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "gdp-1000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 1000,
+      "seed": 1,
+      "files": 1001,
+      "lines": 34390,
+      "nonBlankLines": 30257,
+      "packages": 6,
+      "resourceModules": 83,
+      "crossPackageLinks": 8,
+      "mistakeModules": 3,
+      "proofKinds": 575,
+      "nameCallSites": 989,
+      "tsExpectErrorLines": 12
+    },
+    "runs": [
+      {
+        "files": 1059,
+        "lines": 46174,
+        "types": 142836,
+        "instantiations": 384246,
+        "memoryKB": 211885,
+        "checkSeconds": 0.32,
+        "totalSeconds": 0.438
+      },
+      {
+        "files": 1059,
+        "lines": 46174,
+        "types": 142836,
+        "instantiations": 384246,
+        "memoryKB": 211951,
+        "checkSeconds": 0.318,
+        "totalSeconds": 0.475
+      },
+      {
+        "files": 1059,
+        "lines": 46174,
+        "types": 142836,
+        "instantiations": 384246,
+        "memoryKB": 211953,
+        "checkSeconds": 0.313,
+        "totalSeconds": 0.471
+      },
+      {
+        "files": 1059,
+        "lines": 46174,
+        "types": 142836,
+        "instantiations": 384246,
+        "memoryKB": 211899,
+        "checkSeconds": 0.316,
+        "totalSeconds": 0.475
+      },
+      {
+        "files": 1059,
+        "lines": 46174,
+        "types": 142836,
+        "instantiations": 384246,
+        "memoryKB": 211934,
+        "checkSeconds": 0.337,
+        "totalSeconds": 0.521
+      }
+    ],
+    "median": {
+      "files": 1059,
+      "lines": 46174,
+      "types": 142836,
+      "instantiations": 384246,
+      "memoryKB": 211934,
+      "checkSeconds": 0.318,
+      "totalSeconds": 0.475
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "gdp-5000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 5000,
+      "seed": 1,
+      "files": 5105,
+      "lines": 175752,
+      "nonBlankLines": 154636,
+      "packages": 32,
+      "resourceModules": 425,
+      "crossPackageLinks": 59,
+      "mistakeModules": 17,
+      "proofKinds": 2943,
+      "nameCallSites": 5080,
+      "tsExpectErrorLines": 68
+    },
+    "runs": [
+      {
+        "files": 5163,
+        "lines": 191640,
+        "types": 728708,
+        "instantiations": 1983046,
+        "memoryKB": 1054943,
+        "checkSeconds": 1.931,
+        "totalSeconds": 2.61
+      },
+      {
+        "files": 5163,
+        "lines": 191640,
+        "types": 728708,
+        "instantiations": 1983046,
+        "memoryKB": 1054359,
+        "checkSeconds": 1.822,
+        "totalSeconds": 2.596
+      },
+      {
+        "files": 5163,
+        "lines": 191640,
+        "types": 728708,
+        "instantiations": 1983046,
+        "memoryKB": 1054336,
+        "checkSeconds": 1.787,
+        "totalSeconds": 2.499
+      },
+      {
+        "files": 5163,
+        "lines": 191640,
+        "types": 728708,
+        "instantiations": 1983046,
+        "memoryKB": 1054827,
+        "checkSeconds": 1.743,
+        "totalSeconds": 2.53
+      },
+      {
+        "files": 5163,
+        "lines": 191640,
+        "types": 728708,
+        "instantiations": 1983046,
+        "memoryKB": 1054827,
+        "checkSeconds": 1.948,
+        "totalSeconds": 2.751
+      }
+    ],
+    "median": {
+      "files": 5163,
+      "lines": 191640,
+      "types": 728708,
+      "instantiations": 1983046,
+      "memoryKB": 1054827,
+      "checkSeconds": 1.822,
+      "totalSeconds": 2.596
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "gdp-10000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 344442,
+      "nonBlankLines": 303061,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 5769,
+      "nameCallSites": 9961,
+      "tsExpectErrorLines": 132
+    },
+    "runs": [
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1426591,
+        "instantiations": 3887664,
+        "memoryKB": 2060242,
+        "checkSeconds": 4.027,
+        "totalSeconds": 5.38
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1426591,
+        "instantiations": 3887664,
+        "memoryKB": 2060279,
+        "checkSeconds": 3.559,
+        "totalSeconds": 5.055
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1426591,
+        "instantiations": 3887664,
+        "memoryKB": 2059862,
+        "checkSeconds": 3.529,
+        "totalSeconds": 4.789
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1426591,
+        "instantiations": 3887664,
+        "memoryKB": 2060135,
+        "checkSeconds": 3.63,
+        "totalSeconds": 5.126
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1426591,
+        "instantiations": 3887664,
+        "memoryKB": 2060152,
+        "checkSeconds": 3.885,
+        "totalSeconds": 5.279
+      }
+    ],
+    "median": {
+      "files": 10059,
+      "lines": 365226,
+      "types": 1426591,
+      "instantiations": 3887664,
+      "memoryKB": 2060152,
+      "checkSeconds": 3.63,
+      "totalSeconds": 5.126
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "gdp-20000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 20000,
+      "seed": 1,
+      "files": 20069,
+      "lines": 691304,
+      "nonBlankLines": 608253,
+      "packages": 124,
+      "resourceModules": 1672,
+      "crossPackageLinks": 239,
+      "mistakeModules": 66,
+      "proofKinds": 11580,
+      "nameCallSites": 19997,
+      "tsExpectErrorLines": 264
+    },
+    "runs": [
+      {
+        "files": 20127,
+        "lines": 722156,
+        "types": 2864106,
+        "instantiations": 7807618,
+        "memoryKB": 4128830,
+        "checkSeconds": 7.63,
+        "totalSeconds": 10.909
+      },
+      {
+        "files": 20127,
+        "lines": 722156,
+        "types": 2864106,
+        "instantiations": 7807618,
+        "memoryKB": 4128346,
+        "checkSeconds": 7.427,
+        "totalSeconds": 10.102
+      },
+      {
+        "files": 20127,
+        "lines": 722156,
+        "types": 2864106,
+        "instantiations": 7807618,
+        "memoryKB": 4128531,
+        "checkSeconds": 7.432,
+        "totalSeconds": 9.914
+      },
+      {
+        "files": 20127,
+        "lines": 722156,
+        "types": 2864106,
+        "instantiations": 7807618,
+        "memoryKB": 4128548,
+        "checkSeconds": 7.411,
+        "totalSeconds": 9.931
+      },
+      {
+        "files": 20127,
+        "lines": 722156,
+        "types": 2864106,
+        "instantiations": 7807618,
+        "memoryKB": 4128688,
+        "checkSeconds": 8.133,
+        "totalSeconds": 10.819
+      }
+    ],
+    "median": {
+      "files": 20127,
+      "lines": 722156,
+      "types": 2864106,
+      "instantiations": 7807618,
+      "memoryKB": 4128548,
+      "checkSeconds": 7.432,
+      "totalSeconds": 10.102
+    },
+    "error": null
+  },
+  {
+    "label": "5.9.3",
+    "tsVersion": "5.9.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-1000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 1000,
+      "seed": 1,
+      "files": 1001,
+      "lines": 25972,
+      "nonBlankLines": 22497,
+      "packages": 6,
+      "resourceModules": 83,
+      "crossPackageLinks": 8,
+      "mistakeModules": 3,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 1058,
+        "lines": 37683,
+        "types": 10660,
+        "instantiations": 17062,
+        "memoryKB": 129456,
+        "checkSeconds": 0.34,
+        "totalSeconds": 0.66
+      },
+      {
+        "files": 1058,
+        "lines": 37683,
+        "types": 10660,
+        "instantiations": 17062,
+        "memoryKB": 129723,
+        "checkSeconds": 0.34,
+        "totalSeconds": 0.54
+      },
+      {
+        "files": 1058,
+        "lines": 37683,
+        "types": 10660,
+        "instantiations": 17062,
+        "memoryKB": 130005,
+        "checkSeconds": 0.27,
+        "totalSeconds": 0.48
+      },
+      {
+        "files": 1058,
+        "lines": 37683,
+        "types": 10660,
+        "instantiations": 17062,
+        "memoryKB": 129841,
+        "checkSeconds": 0.3,
+        "totalSeconds": 0.5
+      },
+      {
+        "files": 1058,
+        "lines": 37683,
+        "types": 10660,
+        "instantiations": 17062,
+        "memoryKB": 129639,
+        "checkSeconds": 0.91,
+        "totalSeconds": 1.15
+      }
+    ],
+    "median": {
+      "files": 1058,
+      "lines": 37683,
+      "types": 10660,
+      "instantiations": 17062,
+      "memoryKB": 129723,
+      "checkSeconds": 0.34,
+      "totalSeconds": 0.54
+    },
+    "error": null
+  },
+  {
+    "label": "5.9.3",
+    "tsVersion": "5.9.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-5000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 5000,
+      "seed": 1,
+      "files": 5105,
+      "lines": 132634,
+      "nonBlankLines": 114886,
+      "packages": 32,
+      "resourceModules": 425,
+      "crossPackageLinks": 59,
+      "mistakeModules": 17,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 5162,
+        "lines": 148449,
+        "types": 51328,
+        "instantiations": 89067,
+        "memoryKB": 455587,
+        "checkSeconds": 1.07,
+        "totalSeconds": 2.21
+      },
+      {
+        "files": 5162,
+        "lines": 148449,
+        "types": 51328,
+        "instantiations": 89067,
+        "memoryKB": 453521,
+        "checkSeconds": 1.06,
+        "totalSeconds": 1.91
+      },
+      {
+        "files": 5162,
+        "lines": 148449,
+        "types": 51328,
+        "instantiations": 89067,
+        "memoryKB": 448361,
+        "checkSeconds": 1.06,
+        "totalSeconds": 1.87
+      },
+      {
+        "files": 5162,
+        "lines": 148449,
+        "types": 51328,
+        "instantiations": 89067,
+        "memoryKB": 452678,
+        "checkSeconds": 1.06,
+        "totalSeconds": 1.94
+      },
+      {
+        "files": 5162,
+        "lines": 148449,
+        "types": 51328,
+        "instantiations": 89067,
+        "memoryKB": 455048,
+        "checkSeconds": 1.88,
+        "totalSeconds": 3.62
+      }
+    ],
+    "median": {
+      "files": 5162,
+      "lines": 148449,
+      "types": 51328,
+      "instantiations": 89067,
+      "memoryKB": 453521,
+      "checkSeconds": 1.06,
+      "totalSeconds": 1.94
+    },
+    "error": null
+  },
+  {
+    "label": "5.9.3",
+    "tsVersion": "5.9.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-10000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 259908,
+      "nonBlankLines": 225129,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 10058,
+        "lines": 280619,
+        "types": 99526,
+        "instantiations": 174163,
+        "memoryKB": 802361,
+        "checkSeconds": 1.93,
+        "totalSeconds": 4.06
+      },
+      {
+        "files": 10058,
+        "lines": 280619,
+        "types": 99526,
+        "instantiations": 174163,
+        "memoryKB": 794791,
+        "checkSeconds": 1.76,
+        "totalSeconds": 3.29
+      },
+      {
+        "files": 10058,
+        "lines": 280619,
+        "types": 99526,
+        "instantiations": 174163,
+        "memoryKB": 793113,
+        "checkSeconds": 2.5,
+        "totalSeconds": 5.06
+      },
+      {
+        "files": 10058,
+        "lines": 280619,
+        "types": 99526,
+        "instantiations": 174163,
+        "memoryKB": 785336,
+        "checkSeconds": 2.09,
+        "totalSeconds": 3.77
+      },
+      {
+        "files": 10058,
+        "lines": 280619,
+        "types": 99526,
+        "instantiations": 174163,
+        "memoryKB": 809989,
+        "checkSeconds": 3.56,
+        "totalSeconds": 5.92
+      }
+    ],
+    "median": {
+      "files": 10058,
+      "lines": 280619,
+      "types": 99526,
+      "instantiations": 174163,
+      "memoryKB": 794791,
+      "checkSeconds": 2.09,
+      "totalSeconds": 4.06
+    },
+    "error": null
+  },
+  {
+    "label": "5.9.3",
+    "tsVersion": "5.9.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-20000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 20000,
+      "seed": 1,
+      "files": 20069,
+      "lines": 521612,
+      "nonBlankLines": 451813,
+      "packages": 124,
+      "resourceModules": 1672,
+      "crossPackageLinks": 239,
+      "mistakeModules": 66,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 20126,
+        "lines": 552391,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1519938,
+        "checkSeconds": 3.44,
+        "totalSeconds": 7.38
+      },
+      {
+        "files": 20126,
+        "lines": 552391,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1536780,
+        "checkSeconds": 3.34,
+        "totalSeconds": 6.36
+      },
+      {
+        "files": 20126,
+        "lines": 552391,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1533265,
+        "checkSeconds": 4.34,
+        "totalSeconds": 8.56
+      },
+      {
+        "files": 20126,
+        "lines": 552391,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1513339,
+        "checkSeconds": 3.99,
+        "totalSeconds": 7.91
+      },
+      {
+        "files": 20126,
+        "lines": 552391,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1490465,
+        "checkSeconds": 3.68,
+        "totalSeconds": 8.44
+      }
+    ],
+    "median": {
+      "files": 20126,
+      "lines": 552391,
+      "types": 199161,
+      "instantiations": 350543,
+      "memoryKB": 1519938,
+      "checkSeconds": 3.68,
+      "totalSeconds": 7.91
+    },
+    "error": null
+  },
+  {
+    "label": "5.9.3",
+    "tsVersion": "5.9.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-1000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 1000,
+      "seed": 1,
+      "files": 1001,
+      "lines": 34390,
+      "nonBlankLines": 30257,
+      "packages": 6,
+      "resourceModules": 83,
+      "crossPackageLinks": 8,
+      "mistakeModules": 3,
+      "proofKinds": 575,
+      "nameCallSites": 989,
+      "tsExpectErrorLines": 12
+    },
+    "runs": [
+      {
+        "files": 1059,
+        "lines": 46270,
+        "types": 136469,
+        "instantiations": 384184,
+        "memoryKB": 393638,
+        "checkSeconds": 0.93,
+        "totalSeconds": 1.26
+      },
+      {
+        "files": 1059,
+        "lines": 46270,
+        "types": 136469,
+        "instantiations": 384184,
+        "memoryKB": 387851,
+        "checkSeconds": 0.92,
+        "totalSeconds": 1.16
+      },
+      {
+        "files": 1059,
+        "lines": 46270,
+        "types": 136469,
+        "instantiations": 384184,
+        "memoryKB": 389679,
+        "checkSeconds": 1.36,
+        "totalSeconds": 1.65
+      },
+      {
+        "files": 1059,
+        "lines": 46270,
+        "types": 136469,
+        "instantiations": 384184,
+        "memoryKB": 393559,
+        "checkSeconds": 1.29,
+        "totalSeconds": 1.61
+      },
+      {
+        "files": 1059,
+        "lines": 46270,
+        "types": 136469,
+        "instantiations": 384184,
+        "memoryKB": 394687,
+        "checkSeconds": 1.28,
+        "totalSeconds": 1.61
+      }
+    ],
+    "median": {
+      "files": 1059,
+      "lines": 46270,
+      "types": 136469,
+      "instantiations": 384184,
+      "memoryKB": 393559,
+      "checkSeconds": 1.28,
+      "totalSeconds": 1.61
+    },
+    "error": null
+  },
+  {
+    "label": "5.9.3",
+    "tsVersion": "5.9.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-5000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 5000,
+      "seed": 1,
+      "files": 5105,
+      "lines": 175752,
+      "nonBlankLines": 154636,
+      "packages": 32,
+      "resourceModules": 425,
+      "crossPackageLinks": 59,
+      "mistakeModules": 17,
+      "proofKinds": 2943,
+      "nameCallSites": 5080,
+      "tsExpectErrorLines": 68
+    },
+    "runs": [
+      {
+        "files": 5163,
+        "lines": 191736,
+        "types": 695824,
+        "instantiations": 1982679,
+        "memoryKB": 1720391,
+        "checkSeconds": 3.85,
+        "totalSeconds": 5.17
+      },
+      {
+        "files": 5163,
+        "lines": 191736,
+        "types": 695824,
+        "instantiations": 1982679,
+        "memoryKB": 1726738,
+        "checkSeconds": 4.21,
+        "totalSeconds": 5.25
+      },
+      {
+        "files": 5163,
+        "lines": 191736,
+        "types": 695824,
+        "instantiations": 1982679,
+        "memoryKB": 1710487,
+        "checkSeconds": 4.85,
+        "totalSeconds": 5.88
+      },
+      {
+        "files": 5163,
+        "lines": 191736,
+        "types": 695824,
+        "instantiations": 1982679,
+        "memoryKB": 1712970,
+        "checkSeconds": 5.32,
+        "totalSeconds": 6.8
+      },
+      {
+        "files": 5163,
+        "lines": 191736,
+        "types": 695824,
+        "instantiations": 1982679,
+        "memoryKB": 1709439,
+        "checkSeconds": 4.38,
+        "totalSeconds": 5.49
+      }
+    ],
+    "median": {
+      "files": 5163,
+      "lines": 191736,
+      "types": 695824,
+      "instantiations": 1982679,
+      "memoryKB": 1712970,
+      "checkSeconds": 4.38,
+      "totalSeconds": 5.49
+    },
+    "error": null
+  },
+  {
+    "label": "5.9.3",
+    "tsVersion": "5.9.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-10000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 344442,
+      "nonBlankLines": 303061,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 5769,
+      "nameCallSites": 9961,
+      "tsExpectErrorLines": 132
+    },
+    "runs": [
+      {
+        "files": 10059,
+        "lines": 365322,
+        "types": 1362145,
+        "instantiations": 3886953,
+        "memoryKB": 3113916,
+        "checkSeconds": 7.98,
+        "totalSeconds": 10.33
+      },
+      {
+        "files": 10059,
+        "lines": 365322,
+        "types": 1362145,
+        "instantiations": 3886953,
+        "memoryKB": 3134992,
+        "checkSeconds": 7.75,
+        "totalSeconds": 9.74
+      },
+      {
+        "files": 10059,
+        "lines": 365322,
+        "types": 1362145,
+        "instantiations": 3886953,
+        "memoryKB": 2989208,
+        "checkSeconds": 9,
+        "totalSeconds": 11.05
+      },
+      {
+        "files": 10059,
+        "lines": 365322,
+        "types": 1362145,
+        "instantiations": 3886953,
+        "memoryKB": 3119189,
+        "checkSeconds": 8.53,
+        "totalSeconds": 10.74
+      },
+      {
+        "files": 10059,
+        "lines": 365322,
+        "types": 1362145,
+        "instantiations": 3886953,
+        "memoryKB": 3141919,
+        "checkSeconds": 9.5,
+        "totalSeconds": 11.88
+      }
+    ],
+    "median": {
+      "files": 10059,
+      "lines": 365322,
+      "types": 1362145,
+      "instantiations": 3886953,
+      "memoryKB": 3119189,
+      "checkSeconds": 8.53,
+      "totalSeconds": 10.74
+    },
+    "error": null
+  },
+  {
+    "label": "5.9.3",
+    "tsVersion": "5.9.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-20000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 20000,
+      "seed": 1,
+      "files": 20069,
+      "lines": 691304,
+      "nonBlankLines": 608253,
+      "packages": 124,
+      "resourceModules": 1672,
+      "crossPackageLinks": 239,
+      "mistakeModules": 66,
+      "proofKinds": 11580,
+      "nameCallSites": 19997,
+      "tsExpectErrorLines": 264
+    },
+    "runs": [],
+    "median": null,
+    "error": "exit 1: FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory"
+  },
+  {
+    "label": "6.0.3",
+    "tsVersion": "6.0.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-1000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 1000,
+      "seed": 1,
+      "files": 1001,
+      "lines": 25972,
+      "nonBlankLines": 22497,
+      "packages": 6,
+      "resourceModules": 83,
+      "crossPackageLinks": 8,
+      "mistakeModules": 3,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 1058,
+        "lines": 37574,
+        "types": 10660,
+        "instantiations": 17062,
+        "memoryKB": 124360,
+        "checkSeconds": 0.48,
+        "totalSeconds": 0.94
+      },
+      {
+        "files": 1058,
+        "lines": 37574,
+        "types": 10660,
+        "instantiations": 17062,
+        "memoryKB": 123729,
+        "checkSeconds": 0.37,
+        "totalSeconds": 0.63
+      },
+      {
+        "files": 1058,
+        "lines": 37574,
+        "types": 10660,
+        "instantiations": 17062,
+        "memoryKB": 122615,
+        "checkSeconds": 0.33,
+        "totalSeconds": 0.55
+      },
+      {
+        "files": 1058,
+        "lines": 37574,
+        "types": 10660,
+        "instantiations": 17062,
+        "memoryKB": 122402,
+        "checkSeconds": 0.35,
+        "totalSeconds": 0.59
+      },
+      {
+        "files": 1058,
+        "lines": 37574,
+        "types": 10660,
+        "instantiations": 17062,
+        "memoryKB": 124022,
+        "checkSeconds": 0.34,
+        "totalSeconds": 0.57
+      }
+    ],
+    "median": {
+      "files": 1058,
+      "lines": 37574,
+      "types": 10660,
+      "instantiations": 17062,
+      "memoryKB": 123729,
+      "checkSeconds": 0.35,
+      "totalSeconds": 0.59
+    },
+    "error": null
+  },
+  {
+    "label": "6.0.3",
+    "tsVersion": "6.0.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-5000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 5000,
+      "seed": 1,
+      "files": 5105,
+      "lines": 132634,
+      "nonBlankLines": 114886,
+      "packages": 32,
+      "resourceModules": 425,
+      "crossPackageLinks": 59,
+      "mistakeModules": 17,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 5162,
+        "lines": 148340,
+        "types": 51328,
+        "instantiations": 89067,
+        "memoryKB": 455844,
+        "checkSeconds": 1.41,
+        "totalSeconds": 2.88
+      },
+      {
+        "files": 5162,
+        "lines": 148340,
+        "types": 51328,
+        "instantiations": 89067,
+        "memoryKB": 452165,
+        "checkSeconds": 1.33,
+        "totalSeconds": 2.41
+      },
+      {
+        "files": 5162,
+        "lines": 148340,
+        "types": 51328,
+        "instantiations": 89067,
+        "memoryKB": 455159,
+        "checkSeconds": 1.29,
+        "totalSeconds": 2.42
+      },
+      {
+        "files": 5162,
+        "lines": 148340,
+        "types": 51328,
+        "instantiations": 89067,
+        "memoryKB": 453967,
+        "checkSeconds": 1.29,
+        "totalSeconds": 2.39
+      },
+      {
+        "files": 5162,
+        "lines": 148340,
+        "types": 51328,
+        "instantiations": 89067,
+        "memoryKB": 453854,
+        "checkSeconds": 1.25,
+        "totalSeconds": 2.29
+      }
+    ],
+    "median": {
+      "files": 5162,
+      "lines": 148340,
+      "types": 51328,
+      "instantiations": 89067,
+      "memoryKB": 453967,
+      "checkSeconds": 1.29,
+      "totalSeconds": 2.41
+    },
+    "error": null
+  },
+  {
+    "label": "6.0.3",
+    "tsVersion": "6.0.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-10000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 259908,
+      "nonBlankLines": 225129,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 10058,
+        "lines": 280510,
+        "types": 99526,
+        "instantiations": 174163,
+        "memoryKB": 807635,
+        "checkSeconds": 2.47,
+        "totalSeconds": 4.8
+      },
+      {
+        "files": 10058,
+        "lines": 280510,
+        "types": 99526,
+        "instantiations": 174163,
+        "memoryKB": 820751,
+        "checkSeconds": 2.33,
+        "totalSeconds": 4.41
+      },
+      {
+        "files": 10058,
+        "lines": 280510,
+        "types": 99526,
+        "instantiations": 174163,
+        "memoryKB": 814898,
+        "checkSeconds": 2.44,
+        "totalSeconds": 4.43
+      },
+      {
+        "files": 10058,
+        "lines": 280510,
+        "types": 99526,
+        "instantiations": 174163,
+        "memoryKB": 794522,
+        "checkSeconds": 2.25,
+        "totalSeconds": 4.17
+      },
+      {
+        "files": 10058,
+        "lines": 280510,
+        "types": 99526,
+        "instantiations": 174163,
+        "memoryKB": 843893,
+        "checkSeconds": 2.26,
+        "totalSeconds": 4.14
+      }
+    ],
+    "median": {
+      "files": 10058,
+      "lines": 280510,
+      "types": 99526,
+      "instantiations": 174163,
+      "memoryKB": 814898,
+      "checkSeconds": 2.33,
+      "totalSeconds": 4.41
+    },
+    "error": null
+  },
+  {
+    "label": "6.0.3",
+    "tsVersion": "6.0.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "baseline-20000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 20000,
+      "seed": 1,
+      "files": 20069,
+      "lines": 521612,
+      "nonBlankLines": 451813,
+      "packages": 124,
+      "resourceModules": 1672,
+      "crossPackageLinks": 239,
+      "mistakeModules": 66,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 20126,
+        "lines": 552282,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1518883,
+        "checkSeconds": 4.7,
+        "totalSeconds": 9.5
+      },
+      {
+        "files": 20126,
+        "lines": 552282,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1547525,
+        "checkSeconds": 4.3,
+        "totalSeconds": 8.37
+      },
+      {
+        "files": 20126,
+        "lines": 552282,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1500906,
+        "checkSeconds": 4.01,
+        "totalSeconds": 7.91
+      },
+      {
+        "files": 20126,
+        "lines": 552282,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1499678,
+        "checkSeconds": 3.77,
+        "totalSeconds": 7.61
+      },
+      {
+        "files": 20126,
+        "lines": 552282,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1497104,
+        "checkSeconds": 3.76,
+        "totalSeconds": 7.52
+      }
+    ],
+    "median": {
+      "files": 20126,
+      "lines": 552282,
+      "types": 199161,
+      "instantiations": 350543,
+      "memoryKB": 1500906,
+      "checkSeconds": 4.01,
+      "totalSeconds": 7.91
+    },
+    "error": null
+  },
+  {
+    "label": "6.0.3",
+    "tsVersion": "6.0.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-1000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 1000,
+      "seed": 1,
+      "files": 1001,
+      "lines": 34390,
+      "nonBlankLines": 30257,
+      "packages": 6,
+      "resourceModules": 83,
+      "crossPackageLinks": 8,
+      "mistakeModules": 3,
+      "proofKinds": 575,
+      "nameCallSites": 989,
+      "tsExpectErrorLines": 12
+    },
+    "runs": [
+      {
+        "files": 1059,
+        "lines": 46161,
+        "types": 136469,
+        "instantiations": 384184,
+        "memoryKB": 398070,
+        "checkSeconds": 1.4,
+        "totalSeconds": 1.78
+      },
+      {
+        "files": 1059,
+        "lines": 46161,
+        "types": 136469,
+        "instantiations": 384184,
+        "memoryKB": 398390,
+        "checkSeconds": 1.39,
+        "totalSeconds": 1.78
+      },
+      {
+        "files": 1059,
+        "lines": 46161,
+        "types": 136469,
+        "instantiations": 384184,
+        "memoryKB": 396476,
+        "checkSeconds": 1.25,
+        "totalSeconds": 1.57
+      },
+      {
+        "files": 1059,
+        "lines": 46161,
+        "types": 136469,
+        "instantiations": 384184,
+        "memoryKB": 407130,
+        "checkSeconds": 1.21,
+        "totalSeconds": 1.52
+      },
+      {
+        "files": 1059,
+        "lines": 46161,
+        "types": 136469,
+        "instantiations": 384184,
+        "memoryKB": 396009,
+        "checkSeconds": 1.17,
+        "totalSeconds": 1.43
+      }
+    ],
+    "median": {
+      "files": 1059,
+      "lines": 46161,
+      "types": 136469,
+      "instantiations": 384184,
+      "memoryKB": 398070,
+      "checkSeconds": 1.25,
+      "totalSeconds": 1.57
+    },
+    "error": null
+  },
+  {
+    "label": "6.0.3",
+    "tsVersion": "6.0.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-5000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 5000,
+      "seed": 1,
+      "files": 5105,
+      "lines": 175752,
+      "nonBlankLines": 154636,
+      "packages": 32,
+      "resourceModules": 425,
+      "crossPackageLinks": 59,
+      "mistakeModules": 17,
+      "proofKinds": 2943,
+      "nameCallSites": 5080,
+      "tsExpectErrorLines": 68
+    },
+    "runs": [
+      {
+        "files": 5163,
+        "lines": 191627,
+        "types": 695824,
+        "instantiations": 1982679,
+        "memoryKB": 1726203,
+        "checkSeconds": 5.46,
+        "totalSeconds": 7.53
+      },
+      {
+        "files": 5163,
+        "lines": 191627,
+        "types": 695824,
+        "instantiations": 1982679,
+        "memoryKB": 1730920,
+        "checkSeconds": 5.03,
+        "totalSeconds": 6.42
+      },
+      {
+        "files": 5163,
+        "lines": 191627,
+        "types": 695824,
+        "instantiations": 1982679,
+        "memoryKB": 1738989,
+        "checkSeconds": 4.63,
+        "totalSeconds": 5.86
+      },
+      {
+        "files": 5163,
+        "lines": 191627,
+        "types": 695824,
+        "instantiations": 1982679,
+        "memoryKB": 1714520,
+        "checkSeconds": 4.54,
+        "totalSeconds": 5.71
+      },
+      {
+        "files": 5163,
+        "lines": 191627,
+        "types": 695824,
+        "instantiations": 1982679,
+        "memoryKB": 1702468,
+        "checkSeconds": 4.52,
+        "totalSeconds": 5.7
+      }
+    ],
+    "median": {
+      "files": 5163,
+      "lines": 191627,
+      "types": 695824,
+      "instantiations": 1982679,
+      "memoryKB": 1726203,
+      "checkSeconds": 4.63,
+      "totalSeconds": 5.86
+    },
+    "error": null
+  },
+  {
+    "label": "6.0.3",
+    "tsVersion": "6.0.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-10000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 344442,
+      "nonBlankLines": 303061,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 5769,
+      "nameCallSites": 9961,
+      "tsExpectErrorLines": 132
+    },
+    "runs": [
+      {
+        "files": 10059,
+        "lines": 365213,
+        "types": 1362145,
+        "instantiations": 3886953,
+        "memoryKB": 3146404,
+        "checkSeconds": 9.81,
+        "totalSeconds": 13.19
+      },
+      {
+        "files": 10059,
+        "lines": 365213,
+        "types": 1362145,
+        "instantiations": 3886953,
+        "memoryKB": 3135426,
+        "checkSeconds": 9.11,
+        "totalSeconds": 11.44
+      },
+      {
+        "files": 10059,
+        "lines": 365213,
+        "types": 1362145,
+        "instantiations": 3886953,
+        "memoryKB": 3148309,
+        "checkSeconds": 8.8,
+        "totalSeconds": 11.09
+      },
+      {
+        "files": 10059,
+        "lines": 365213,
+        "types": 1362145,
+        "instantiations": 3886953,
+        "memoryKB": 3144705,
+        "checkSeconds": 8.69,
+        "totalSeconds": 11.1
+      },
+      {
+        "files": 10059,
+        "lines": 365213,
+        "types": 1362145,
+        "instantiations": 3886953,
+        "memoryKB": 3184225,
+        "checkSeconds": 67.56,
+        "totalSeconds": 70.4
+      }
+    ],
+    "median": {
+      "files": 10059,
+      "lines": 365213,
+      "types": 1362145,
+      "instantiations": 3886953,
+      "memoryKB": 3146404,
+      "checkSeconds": 9.11,
+      "totalSeconds": 11.44
+    },
+    "error": null
+  },
+  {
+    "label": "6.0.3",
+    "tsVersion": "6.0.3",
+    "tscArgs": [],
+    "nodeOptions": null,
+    "project": "gdp-20000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 20000,
+      "seed": 1,
+      "files": 20069,
+      "lines": 691304,
+      "nonBlankLines": 608253,
+      "packages": 124,
+      "resourceModules": 1672,
+      "crossPackageLinks": 239,
+      "mistakeModules": 66,
+      "proofKinds": 11580,
+      "nameCallSites": 19997,
+      "tsExpectErrorLines": 264
+    },
+    "runs": [],
+    "median": null,
+    "error": "exit 1: FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory"
+  },
+  {
+    "label": "5.9.3, 16 GB heap",
+    "tsVersion": "5.9.3",
+    "tscArgs": [],
+    "nodeOptions": "--max-old-space-size=16384",
+    "project": "baseline-20000",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 20000,
+      "seed": 1,
+      "files": 20069,
+      "lines": 521612,
+      "nonBlankLines": 451813,
+      "packages": 124,
+      "resourceModules": 1672,
+      "crossPackageLinks": 239,
+      "mistakeModules": 66,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 20126,
+        "lines": 552391,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1496765,
+        "checkSeconds": 3.72,
+        "totalSeconds": 8.64
+      },
+      {
+        "files": 20126,
+        "lines": 552391,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1534662,
+        "checkSeconds": 4.71,
+        "totalSeconds": 10.26
+      },
+      {
+        "files": 20126,
+        "lines": 552391,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1534853,
+        "checkSeconds": 4.07,
+        "totalSeconds": 9.07
+      },
+      {
+        "files": 20126,
+        "lines": 552391,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1536342,
+        "checkSeconds": 3.92,
+        "totalSeconds": 8.8
+      },
+      {
+        "files": 20126,
+        "lines": 552391,
+        "types": 199161,
+        "instantiations": 350543,
+        "memoryKB": 1504397,
+        "checkSeconds": 4.52,
+        "totalSeconds": 11.04
+      }
+    ],
+    "median": {
+      "files": 20126,
+      "lines": 552391,
+      "types": 199161,
+      "instantiations": 350543,
+      "memoryKB": 1534662,
+      "checkSeconds": 4.07,
+      "totalSeconds": 9.07
+    },
+    "error": null
+  },
+  {
+    "label": "5.9.3, 16 GB heap",
+    "tsVersion": "5.9.3",
+    "tscArgs": [],
+    "nodeOptions": "--max-old-space-size=16384",
+    "project": "gdp-20000",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 20000,
+      "seed": 1,
+      "files": 20069,
+      "lines": 691304,
+      "nonBlankLines": 608253,
+      "packages": 124,
+      "resourceModules": 1672,
+      "crossPackageLinks": 239,
+      "mistakeModules": 66,
+      "proofKinds": 11580,
+      "nameCallSites": 19997,
+      "tsExpectErrorLines": 264
+    },
+    "runs": [
+      {
+        "files": 20127,
+        "lines": 722252,
+        "types": 2734600,
+        "instantiations": 7806169,
+        "memoryKB": 6548918,
+        "checkSeconds": 19.55,
+        "totalSeconds": 27.05
+      },
+      {
+        "files": 20127,
+        "lines": 722252,
+        "types": 2734600,
+        "instantiations": 7806169,
+        "memoryKB": 6641925,
+        "checkSeconds": 19.59,
+        "totalSeconds": 27.66
+      },
+      {
+        "files": 20127,
+        "lines": 722252,
+        "types": 2734600,
+        "instantiations": 7806169,
+        "memoryKB": 6562853,
+        "checkSeconds": 19.67,
+        "totalSeconds": 25.4
+      },
+      {
+        "files": 20127,
+        "lines": 722252,
+        "types": 2734600,
+        "instantiations": 7806169,
+        "memoryKB": 6448461,
+        "checkSeconds": 22.41,
+        "totalSeconds": 27.79
+      },
+      {
+        "files": 20127,
+        "lines": 722252,
+        "types": 2734600,
+        "instantiations": 7806169,
+        "memoryKB": 6554990,
+        "checkSeconds": 25.09,
+        "totalSeconds": 31.5
+      }
+    ],
+    "median": {
+      "files": 20127,
+      "lines": 722252,
+      "types": 2734600,
+      "instantiations": 7806169,
+      "memoryKB": 6554990,
+      "checkSeconds": 19.67,
+      "totalSeconds": 27.66
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "baseline-10000:layer1-core",
+    "config": "tsconfig.layer1-core.json",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 259908,
+      "nonBlankLines": 225129,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 61,
+        "lines": 10733,
+        "types": 371,
+        "instantiations": 138,
+        "memoryKB": 6184,
+        "checkSeconds": 0.003,
+        "totalSeconds": 0.027
+      },
+      {
+        "files": 61,
+        "lines": 10733,
+        "types": 371,
+        "instantiations": 138,
+        "memoryKB": 6183,
+        "checkSeconds": 0.002,
+        "totalSeconds": 0.025
+      },
+      {
+        "files": 61,
+        "lines": 10733,
+        "types": 371,
+        "instantiations": 138,
+        "memoryKB": 6179,
+        "checkSeconds": 0.003,
+        "totalSeconds": 0.032
+      },
+      {
+        "files": 61,
+        "lines": 10733,
+        "types": 371,
+        "instantiations": 138,
+        "memoryKB": 6179,
+        "checkSeconds": 0.003,
+        "totalSeconds": 0.033
+      },
+      {
+        "files": 61,
+        "lines": 10733,
+        "types": 371,
+        "instantiations": 138,
+        "memoryKB": 6179,
+        "checkSeconds": 0.003,
+        "totalSeconds": 0.029
+      }
+    ],
+    "median": {
+      "files": 61,
+      "lines": 10733,
+      "types": 371,
+      "instantiations": 138,
+      "memoryKB": 6179,
+      "checkSeconds": 0.003,
+      "totalSeconds": 0.029
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "baseline-10000:layer2-data",
+    "config": "tsconfig.layer2-data.json",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 259908,
+      "nonBlankLines": 225129,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 1727,
+        "lines": 90577,
+        "types": 38216,
+        "instantiations": 62747,
+        "memoryKB": 145117,
+        "checkSeconds": 0.645,
+        "totalSeconds": 1.556
+      },
+      {
+        "files": 1727,
+        "lines": 90577,
+        "types": 38216,
+        "instantiations": 62747,
+        "memoryKB": 145074,
+        "checkSeconds": 0.695,
+        "totalSeconds": 1.743
+      },
+      {
+        "files": 1727,
+        "lines": 90577,
+        "types": 38216,
+        "instantiations": 62747,
+        "memoryKB": 145076,
+        "checkSeconds": 0.712,
+        "totalSeconds": 1.76
+      },
+      {
+        "files": 1727,
+        "lines": 90577,
+        "types": 38216,
+        "instantiations": 62747,
+        "memoryKB": 145153,
+        "checkSeconds": 0.682,
+        "totalSeconds": 1.68
+      },
+      {
+        "files": 1727,
+        "lines": 90577,
+        "types": 38216,
+        "instantiations": 62747,
+        "memoryKB": 145150,
+        "checkSeconds": 0.65,
+        "totalSeconds": 1.638
+      }
+    ],
+    "median": {
+      "files": 1727,
+      "lines": 90577,
+      "types": 38216,
+      "instantiations": 62747,
+      "memoryKB": 145117,
+      "checkSeconds": 0.682,
+      "totalSeconds": 1.68
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "baseline-10000:layer3-auth",
+    "config": "tsconfig.layer3-auth.json",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 259908,
+      "nonBlankLines": 225129,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 7496,
+        "lines": 141665,
+        "types": 38221,
+        "instantiations": 62747,
+        "memoryKB": 235714,
+        "checkSeconds": 0.969,
+        "totalSeconds": 4.266
+      },
+      {
+        "files": 7496,
+        "lines": 141665,
+        "types": 38221,
+        "instantiations": 62747,
+        "memoryKB": 235569,
+        "checkSeconds": 0.947,
+        "totalSeconds": 4.295
+      },
+      {
+        "files": 7496,
+        "lines": 141665,
+        "types": 38221,
+        "instantiations": 62747,
+        "memoryKB": 235587,
+        "checkSeconds": 0.989,
+        "totalSeconds": 4.562
+      },
+      {
+        "files": 7496,
+        "lines": 141665,
+        "types": 38221,
+        "instantiations": 62747,
+        "memoryKB": 235617,
+        "checkSeconds": 0.992,
+        "totalSeconds": 4.53
+      },
+      {
+        "files": 7496,
+        "lines": 141665,
+        "types": 38221,
+        "instantiations": 62747,
+        "memoryKB": 235619,
+        "checkSeconds": 1.15,
+        "totalSeconds": 4.863
+      }
+    ],
+    "median": {
+      "files": 7496,
+      "lines": 141665,
+      "types": 38221,
+      "instantiations": 62747,
+      "memoryKB": 235617,
+      "checkSeconds": 0.989,
+      "totalSeconds": 4.53
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "baseline-10000:layer4-policy",
+    "config": "tsconfig.layer4-policy.json",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 259908,
+      "nonBlankLines": 225129,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 8329,
+        "lines": 157492,
+        "types": 43219,
+        "instantiations": 62747,
+        "memoryKB": 263346,
+        "checkSeconds": 1.121,
+        "totalSeconds": 4.765
+      },
+      {
+        "files": 8329,
+        "lines": 157492,
+        "types": 43219,
+        "instantiations": 62747,
+        "memoryKB": 263327,
+        "checkSeconds": 1.215,
+        "totalSeconds": 4.866
+      },
+      {
+        "files": 8329,
+        "lines": 157492,
+        "types": 43219,
+        "instantiations": 62747,
+        "memoryKB": 263311,
+        "checkSeconds": 1.136,
+        "totalSeconds": 4.993
+      },
+      {
+        "files": 8329,
+        "lines": 157492,
+        "types": 43219,
+        "instantiations": 62747,
+        "memoryKB": 263326,
+        "checkSeconds": 1.148,
+        "totalSeconds": 5.017
+      },
+      {
+        "files": 8329,
+        "lines": 157492,
+        "types": 43219,
+        "instantiations": 62747,
+        "memoryKB": 263278,
+        "checkSeconds": 1.301,
+        "totalSeconds": 5.441
+      }
+    ],
+    "median": {
+      "files": 8329,
+      "lines": 157492,
+      "types": 43219,
+      "instantiations": 62747,
+      "memoryKB": 263326,
+      "checkSeconds": 1.148,
+      "totalSeconds": 4.993
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "baseline-10000:layer5-service",
+    "config": "tsconfig.layer5-service.json",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 259908,
+      "nonBlankLines": 225129,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 9162,
+        "lines": 210025,
+        "types": 63187,
+        "instantiations": 115024,
+        "memoryKB": 372421,
+        "checkSeconds": 1.688,
+        "totalSeconds": 5.607
+      },
+      {
+        "files": 9162,
+        "lines": 210025,
+        "types": 63187,
+        "instantiations": 115024,
+        "memoryKB": 372477,
+        "checkSeconds": 1.824,
+        "totalSeconds": 5.841
+      },
+      {
+        "files": 9162,
+        "lines": 210025,
+        "types": 63187,
+        "instantiations": 115024,
+        "memoryKB": 372404,
+        "checkSeconds": 1.807,
+        "totalSeconds": 5.729
+      },
+      {
+        "files": 9162,
+        "lines": 210025,
+        "types": 63187,
+        "instantiations": 115024,
+        "memoryKB": 372422,
+        "checkSeconds": 1.75,
+        "totalSeconds": 6.269
+      },
+      {
+        "files": 9162,
+        "lines": 210025,
+        "types": 63187,
+        "instantiations": 115024,
+        "memoryKB": 372411,
+        "checkSeconds": 1.785,
+        "totalSeconds": 6.111
+      }
+    ],
+    "median": {
+      "files": 9162,
+      "lines": 210025,
+      "types": 63187,
+      "instantiations": 115024,
+      "memoryKB": 372421,
+      "checkSeconds": 1.785,
+      "totalSeconds": 5.841
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "baseline-10000:layer6-all",
+    "config": "tsconfig.layer6-all.json",
+    "manifest": {
+      "variant": "baseline",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 259908,
+      "nonBlankLines": 225129,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 0,
+      "nameCallSites": 0,
+      "tsExpectErrorLines": 0
+    },
+    "runs": [
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 101472,
+        "instantiations": 174440,
+        "memoryKB": 535236,
+        "checkSeconds": 2.787,
+        "totalSeconds": 7.384
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 101472,
+        "instantiations": 174440,
+        "memoryKB": 534768,
+        "checkSeconds": 2.869,
+        "totalSeconds": 7.61
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 101472,
+        "instantiations": 174440,
+        "memoryKB": 535151,
+        "checkSeconds": 3.11,
+        "totalSeconds": 7.927
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 101472,
+        "instantiations": 174440,
+        "memoryKB": 534980,
+        "checkSeconds": 3.046,
+        "totalSeconds": 7.832
+      },
+      {
+        "files": 10058,
+        "lines": 280523,
+        "types": 101472,
+        "instantiations": 174440,
+        "memoryKB": 535034,
+        "checkSeconds": 3.124,
+        "totalSeconds": 8.11
+      }
+    ],
+    "median": {
+      "files": 10058,
+      "lines": 280523,
+      "types": 101472,
+      "instantiations": 174440,
+      "memoryKB": 535034,
+      "checkSeconds": 3.046,
+      "totalSeconds": 7.832
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "gdp-10000:layer1-core",
+    "config": "tsconfig.layer1-core.json",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 344442,
+      "nonBlankLines": 303061,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 5769,
+      "nameCallSites": 9961,
+      "tsExpectErrorLines": 132
+    },
+    "runs": [
+      {
+        "files": 61,
+        "lines": 10733,
+        "types": 371,
+        "instantiations": 138,
+        "memoryKB": 6178,
+        "checkSeconds": 0.002,
+        "totalSeconds": 0.025
+      },
+      {
+        "files": 61,
+        "lines": 10733,
+        "types": 371,
+        "instantiations": 138,
+        "memoryKB": 6173,
+        "checkSeconds": 0.003,
+        "totalSeconds": 0.025
+      },
+      {
+        "files": 61,
+        "lines": 10733,
+        "types": 371,
+        "instantiations": 138,
+        "memoryKB": 6173,
+        "checkSeconds": 0.004,
+        "totalSeconds": 0.029
+      },
+      {
+        "files": 61,
+        "lines": 10733,
+        "types": 371,
+        "instantiations": 138,
+        "memoryKB": 6178,
+        "checkSeconds": 0.003,
+        "totalSeconds": 0.03
+      },
+      {
+        "files": 61,
+        "lines": 10733,
+        "types": 371,
+        "instantiations": 138,
+        "memoryKB": 6178,
+        "checkSeconds": 0.003,
+        "totalSeconds": 0.027
+      }
+    ],
+    "median": {
+      "files": 61,
+      "lines": 10733,
+      "types": 371,
+      "instantiations": 138,
+      "memoryKB": 6178,
+      "checkSeconds": 0.003,
+      "totalSeconds": 0.027
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "gdp-10000:layer2-data",
+    "config": "tsconfig.layer2-data.json",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 344442,
+      "nonBlankLines": 303061,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 5769,
+      "nameCallSites": 9961,
+      "tsExpectErrorLines": 132
+    },
+    "runs": [
+      {
+        "files": 1727,
+        "lines": 90577,
+        "types": 38216,
+        "instantiations": 62747,
+        "memoryKB": 145062,
+        "checkSeconds": 0.651,
+        "totalSeconds": 1.485
+      },
+      {
+        "files": 1727,
+        "lines": 90577,
+        "types": 38216,
+        "instantiations": 62747,
+        "memoryKB": 145107,
+        "checkSeconds": 0.653,
+        "totalSeconds": 1.64
+      },
+      {
+        "files": 1727,
+        "lines": 90577,
+        "types": 38216,
+        "instantiations": 62747,
+        "memoryKB": 144960,
+        "checkSeconds": 0.677,
+        "totalSeconds": 1.587
+      },
+      {
+        "files": 1727,
+        "lines": 90577,
+        "types": 38216,
+        "instantiations": 62747,
+        "memoryKB": 145143,
+        "checkSeconds": 0.649,
+        "totalSeconds": 1.655
+      },
+      {
+        "files": 1727,
+        "lines": 90577,
+        "types": 38216,
+        "instantiations": 62747,
+        "memoryKB": 145052,
+        "checkSeconds": 0.661,
+        "totalSeconds": 1.586
+      }
+    ],
+    "median": {
+      "files": 1727,
+      "lines": 90577,
+      "types": 38216,
+      "instantiations": 62747,
+      "memoryKB": 145062,
+      "checkSeconds": 0.653,
+      "totalSeconds": 1.587
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "gdp-10000:layer3-auth",
+    "config": "tsconfig.layer3-auth.json",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 344442,
+      "nonBlankLines": 303061,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 5769,
+      "nameCallSites": 9961,
+      "tsExpectErrorLines": 132
+    },
+    "runs": [
+      {
+        "files": 7497,
+        "lines": 168242,
+        "types": 331003,
+        "instantiations": 734897,
+        "memoryKB": 641388,
+        "checkSeconds": 3.673,
+        "totalSeconds": 6.923
+      },
+      {
+        "files": 7497,
+        "lines": 168242,
+        "types": 331003,
+        "instantiations": 734897,
+        "memoryKB": 641629,
+        "checkSeconds": 3.648,
+        "totalSeconds": 7.093
+      },
+      {
+        "files": 7497,
+        "lines": 168242,
+        "types": 331003,
+        "instantiations": 734897,
+        "memoryKB": 641303,
+        "checkSeconds": 3.507,
+        "totalSeconds": 6.82
+      },
+      {
+        "files": 7497,
+        "lines": 168242,
+        "types": 331003,
+        "instantiations": 734897,
+        "memoryKB": 641563,
+        "checkSeconds": 3.972,
+        "totalSeconds": 7.585
+      },
+      {
+        "files": 7497,
+        "lines": 168242,
+        "types": 331003,
+        "instantiations": 734897,
+        "memoryKB": 641571,
+        "checkSeconds": 3.749,
+        "totalSeconds": 7.156
+      }
+    ],
+    "median": {
+      "files": 7497,
+      "lines": 168242,
+      "types": 331003,
+      "instantiations": 734897,
+      "memoryKB": 641563,
+      "checkSeconds": 3.673,
+      "totalSeconds": 7.093
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "gdp-10000:layer4-policy",
+    "config": "tsconfig.layer4-policy.json",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 344442,
+      "nonBlankLines": 303061,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 5769,
+      "nameCallSites": 9961,
+      "tsExpectErrorLines": 132
+    },
+    "runs": [
+      {
+        "files": 8330,
+        "lines": 190733,
+        "types": 600922,
+        "instantiations": 1349654,
+        "memoryKB": 964396,
+        "checkSeconds": 5.373,
+        "totalSeconds": 9.507
+      },
+      {
+        "files": 8330,
+        "lines": 190733,
+        "types": 600922,
+        "instantiations": 1349654,
+        "memoryKB": 964420,
+        "checkSeconds": 6.532,
+        "totalSeconds": 10.468
+      },
+      {
+        "files": 8330,
+        "lines": 190733,
+        "types": 600922,
+        "instantiations": 1349654,
+        "memoryKB": 964358,
+        "checkSeconds": 6.221,
+        "totalSeconds": 10.525
+      },
+      {
+        "files": 8330,
+        "lines": 190733,
+        "types": 600922,
+        "instantiations": 1349654,
+        "memoryKB": 964475,
+        "checkSeconds": 5.815,
+        "totalSeconds": 10.069
+      },
+      {
+        "files": 8330,
+        "lines": 190733,
+        "types": 600922,
+        "instantiations": 1349654,
+        "memoryKB": 964362,
+        "checkSeconds": 5.757,
+        "totalSeconds": 9.802
+      }
+    ],
+    "median": {
+      "files": 8330,
+      "lines": 190733,
+      "types": 600922,
+      "instantiations": 1349654,
+      "memoryKB": 964396,
+      "checkSeconds": 5.815,
+      "totalSeconds": 10.069
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "gdp-10000:layer5-service",
+    "config": "tsconfig.layer5-service.json",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 344442,
+      "nonBlankLines": 303061,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 5769,
+      "nameCallSites": 9961,
+      "tsExpectErrorLines": 132
+    },
+    "runs": [
+      {
+        "files": 9163,
+        "lines": 267202,
+        "types": 699795,
+        "instantiations": 1463131,
+        "memoryKB": 1143946,
+        "checkSeconds": 7.029,
+        "totalSeconds": 11.457
+      },
+      {
+        "files": 9163,
+        "lines": 267202,
+        "types": 699795,
+        "instantiations": 1463131,
+        "memoryKB": 1144119,
+        "checkSeconds": 7.617,
+        "totalSeconds": 12.056
+      },
+      {
+        "files": 9163,
+        "lines": 267202,
+        "types": 699795,
+        "instantiations": 1463131,
+        "memoryKB": 1144385,
+        "checkSeconds": 7.208,
+        "totalSeconds": 11.51
+      },
+      {
+        "files": 9163,
+        "lines": 267202,
+        "types": 699795,
+        "instantiations": 1463131,
+        "memoryKB": 1144058,
+        "checkSeconds": 7.229,
+        "totalSeconds": 11.529
+      },
+      {
+        "files": 9163,
+        "lines": 267202,
+        "types": 699795,
+        "instantiations": 1463131,
+        "memoryKB": 1144209,
+        "checkSeconds": 7.054,
+        "totalSeconds": 11.434
+      }
+    ],
+    "median": {
+      "files": 9163,
+      "lines": 267202,
+      "types": 699795,
+      "instantiations": 1463131,
+      "memoryKB": 1144119,
+      "checkSeconds": 7.208,
+      "totalSeconds": 11.51
+    },
+    "error": null
+  },
+  {
+    "label": "7.0.2 --singleThreaded, loaded machine",
+    "tsVersion": "7.0.2",
+    "tscArgs": [
+      "--singleThreaded"
+    ],
+    "nodeOptions": null,
+    "project": "gdp-10000:layer6-all",
+    "config": "tsconfig.layer6-all.json",
+    "manifest": {
+      "variant": "gdp",
+      "targetFiles": 10000,
+      "seed": 1,
+      "files": 10001,
+      "lines": 344442,
+      "nonBlankLines": 303061,
+      "packages": 62,
+      "resourceModules": 833,
+      "crossPackageLinks": 118,
+      "mistakeModules": 33,
+      "proofKinds": 5769,
+      "nameCallSites": 9961,
+      "tsExpectErrorLines": 132
+    },
+    "runs": [
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1426591,
+        "instantiations": 3887664,
+        "memoryKB": 2060761,
+        "checkSeconds": 14.677,
+        "totalSeconds": 19.485
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1426591,
+        "instantiations": 3887664,
+        "memoryKB": 2060778,
+        "checkSeconds": 14.998,
+        "totalSeconds": 19.787
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1426591,
+        "instantiations": 3887664,
+        "memoryKB": 2060927,
+        "checkSeconds": 15.585,
+        "totalSeconds": 20.655
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1426591,
+        "instantiations": 3887664,
+        "memoryKB": 2060719,
+        "checkSeconds": 15.484,
+        "totalSeconds": 20.782
+      },
+      {
+        "files": 10059,
+        "lines": 365226,
+        "types": 1426591,
+        "instantiations": 3887664,
+        "memoryKB": 2060886,
+        "checkSeconds": 15.124,
+        "totalSeconds": 20.105
+      }
+    ],
+    "median": {
+      "files": 10059,
+      "lines": 365226,
+      "types": 1426591,
+      "instantiations": 3887664,
+      "memoryKB": 2060778,
+      "checkSeconds": 15.124,
+      "totalSeconds": 20.105
+    },
+    "error": null
+  }
+]

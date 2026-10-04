@@ -1,0 +1,57 @@
+# Publishes gdp-ts to npm with trusted publishing (OIDC): no npm token is
+# stored anywhere, and npm attaches provenance automatically.
+#
+# Release: bump "version" in package.json, commit, then push a matching tag:
+#   git tag v0.1.0 && git push origin v0.1.0
+#
+# The package is *staged*, not published directly: a maintainer approves it
+# with 2FA on npmjs.com (or `npm stage approve`) before it goes live, so a
+# compromised workflow cannot push a release on its own.
+#
+# One-time setup on npmjs.com (package settings > Trusted Publisher):
+#   GitHub Actions, user "rauchg", repository "gdp-ts", workflow "publish.yml".
+# A trusted publisher can only be added to a package that already exists, so
+# the very first version has to be published by hand. Provenance also needs
+# the repository to be public.
+name: Publish
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+  id-token: write # required for npm trusted publishing (OIDC)
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest # trusted publishing needs GitHub-hosted runners
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+          package-manager-cache: false # no caches in release builds
+
+      - name: Tag matches package.json version
+        run: |
+          version="v$(node -p 'require("./package.json").version')"
+          if [ "$version" != "$GITHUB_REF_NAME" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match package.json $version" >&2
+            exit 1
+          fi
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check
+
+      # pnpm pack applies publishConfig (exports pointing at dist/), which
+      # npm itself would ignore; prepack builds dist/ first.
+      - run: pnpm pack --pack-destination "$RUNNER_TEMP/pack"
+      - name: Packed package works for consumers
+        run: test/support/smoke-package.sh "$RUNNER_TEMP"/pack/gdp-ts-*.tgz
+
+      # Staged publishing needs npm 11.15+; trusted publishing needs 11.5.1+.
+      - run: npm install --global npm@latest
+      - run: npm stage publish "$RUNNER_TEMP"/pack/gdp-ts-*.tgz
