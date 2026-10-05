@@ -4,6 +4,10 @@ import type { Server } from "node:http";
 import { app } from "../src/app.ts";
 import { db } from "../src/db.ts";
 import { seed } from "../src/seed.ts";
+import { name } from "@gdp-ts/core";
+import { Host } from "../src/lib/ids.ts";
+import { passwordAccepted } from "../src/proofs/password-accepted.ts";
+import { insertToken } from "../src/repo.ts";
 
 let server: Server;
 let base: string;
@@ -116,4 +120,18 @@ test("unknown projects and URLs are 404; malformed changes 400", async () => {
   assert.equal((await call("GET", settings("nope"), { as: "alice" })).status, 404);
   assert.equal((await call("GET", "/sites/nope.example")).status, 404);
   assert.equal((await call("PATCH", settings("acme-docs"), { as: "alice", body: enable("all", "") })).status, 400);
+});
+
+
+test("a password change between validation and token issuance cannot authorize the new version", async () => {
+  await name(Host("acme-shop-git-redesign.vercel.app"), async (url) => {
+    const accepted = await passwordAccepted(url, "open-sesame");
+    assert.ok(accepted);
+    const changed = await call("PATCH", settings("acme-shop"), { as: "alice", body: enable("all", "replacement-password") });
+    assert.equal(changed.status, 200);
+    const token = await insertToken(url, accepted);
+    assert.equal((await call("GET", "/sites/acme-shop-git-redesign.vercel.app", {
+      cookie: `protection_token=${token}`,
+    })).status, 401);
+  });
 });
