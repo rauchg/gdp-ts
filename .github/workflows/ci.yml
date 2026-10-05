@@ -18,9 +18,9 @@ jobs:
     name: Library, examples and docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v4 # version from package.json "packageManager"
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6 # version from package.json "packageManager"
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: pnpm
@@ -41,8 +41,8 @@ jobs:
         # 5.4 is the documented minimum; 7 runs in the job above.
         typescript: ["5.4", "5.5", "5.6", "5.9", "6.0"]
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
       - run: npx --yes --package=typescript@${{ matrix.typescript }} tsc -p tsconfig.compat.json
@@ -51,7 +51,7 @@ jobs:
     name: Lint workflows
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: docker://rhysd/actionlint:latest
         with:
           args: -color
