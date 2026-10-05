@@ -84,3 +84,16 @@ test("changing the password invalidates earlier tokens", async () => {
   assert.equal(await unlocks("dashboard.acme.com", token), false);
   assert.equal(await accepts("dashboard.acme.com", "new-password"), true);
 });
+
+
+test("a password change between validation and token issuance cannot authorize the new version", async () => {
+  const alice = await db.getUser(UserId("alice"));
+  if (!alice) throw new Error("fixture missing");
+  await name(Host("acme-shop-git-redesign.vercel.app"), async (url) => {
+    const accepted = await passwordAccepted(url, "open-sesame");
+    assert.ok(accepted);
+    await updateProtection(alice, ProjectId("acme-shop"), { deploymentType: "all", password: "replacement-password" });
+    const token = await issueToken(url, accepted);
+    assert.equal(await tokenUnlocksUrl(url, token), null);
+  });
+});
