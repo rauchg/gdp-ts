@@ -78,3 +78,25 @@ test("malformed changes are 400, unknown projects 404", async () => {
   assert.equal((await call("PATCH", path("acme-docs"), "alice", { enabled: true })).status, 400);
   assert.equal((await call("GET", path("nope"), "alice")).status, 404);
 });
+
+
+test("malformed JSON is a client error", async () => {
+  const res = await fetch(base + path("acme-docs"), {
+    method: "PATCH",
+    headers: { authorization: "Bearer alice", "content-type": "application/json" },
+    body: '{"passwordProtection":',
+  });
+  assert.equal(res.status, 400);
+  assert.deepEqual(await res.json(), { error: "Invalid JSON" });
+});
+
+
+test("an oversized JSON body is a client error", async () => {
+  const res = await fetch(base + path("acme-docs"), {
+    method: "PATCH",
+    headers: { authorization: "Bearer alice", "content-type": "application/json" },
+    body: JSON.stringify({ passwordProtection: { deploymentType: "all", password: "x".repeat(110 * 1024) } }),
+  });
+  assert.equal(res.status, 413);
+  assert.deepEqual(await res.json(), { error: "Request body too large" });
+});
