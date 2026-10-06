@@ -133,7 +133,7 @@ time. [We rely on linting](skills/gdp-ts/references/recipe.md#6-turn-on-the-lint
 [`@gdp-ts/core`](https://www.npmjs.com/package/@gdp-ts/core) on npm ships two things:
 
 - **The library** (`@gdp-ts/core`): `name()`, `defineProof()`, `Named` and `Proof`, with no dependencies.
-- **The linter** (`@gdp-ts/core/lint/eslint`, `@gdp-ts/core/lint/oxlint`): presets for ESLint and Oxlint that catch what the type checker can't, such as forging a proof with `as` or minting one outside `proofs/` ([setup](skills/gdp-ts/references/recipe.md#6-turn-on-the-lint-preset)).
+- **The linter** (`@gdp-ts/core/lint/eslint`, `@gdp-ts/core/lint/oxlint`): presets for ESLint and Oxlint that catch what the type checker can't, such as forging a proof with `as`, `let p!:` or `null!`, rebinding a `Named` with an object spread, or minting a proof outside `proofs/` ([setup](skills/gdp-ts/references/recipe.md#6-turn-on-the-lint-preset)).
 
 ## The skill
 

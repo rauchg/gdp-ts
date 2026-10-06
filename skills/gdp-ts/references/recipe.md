@@ -257,7 +257,9 @@ The rules, all syntactic (no type information, so they are fast):
 |---|---|---|
 | `gdp-ts/no-define-proof` | outside `proofs/` | Importing or calling `defineProof`: minting proofs anywhere but a trusted module. |
 | `gdp-ts/no-exported-prover` | inside `proofs/` | Exporting a prover (directly, via `export { X }`, or as a default export). |
-| `gdp-ts/no-proof-assertion` | outside `proofs/` | Type assertions to `Named`, `Proof`, or any type imported from a `proofs` path: `{} as UserIsProjectAdmin<U, P>`. |
+| `gdp-ts/no-proof-assertion` | outside `proofs/` | Conjuring a proof or `Named` type without the trusted module: assertions (`{} as UserIsProjectAdmin<U, P>`), definite assignment (`let p!: ...`), `declare` statements, and `declare module "@gdp-ts/core"` augmentations. |
+| `gdp-ts/no-null-assertion` | outside `proofs/` | `null!` / `undefined!`, which fabricate a value of any expected type, including proofs. |
+| `gdp-ts/no-name-rebind` | outside `proofs/` | `{ ...named, value: other }`, which transplants a name (and every proof about it) onto a different runtime value. |
 | `gdp-ts/no-type-assertion` | strict mode | Every other `as` / `<T>x` (except `as const`). |
 | `gdp-ts/no-any` | strict mode | Every `any`, which silently satisfies any proof parameter. |
 

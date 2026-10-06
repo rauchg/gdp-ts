@@ -225,6 +225,39 @@ const noProofAssertion: RuleModule = {
   },
 };
 
+const REBIND_KEY = "value";
+
+const noNameRebind: RuleModule = {
+  meta: {
+    type: "problem",
+    docs: {
+      description:
+        "Spreading an object while overriding `value` can transplant a Named value's compile-time name onto a different runtime value.",
+    },
+    schema: [],
+  },
+  create(context) {
+    return {
+      ObjectExpression(node) {
+        const properties = children(node, "properties");
+        if (!properties.some((p) => p.type === "SpreadElement")) return;
+        for (const property of properties) {
+          if (property.type !== "Property" || property["computed"] === true) continue;
+          const key = child(property, "key");
+          const keyName = name(key) ?? (key?.type === "Literal" ? key["value"] : undefined);
+          if (keyName === REBIND_KEY) {
+            context.report({
+              node: property,
+              message:
+                "Do not spread and override `value`: if the object is a Named, this rebinds its name (and every proof about it) to a different value. Call name() on the new value instead.",
+            });
+          }
+        }
+      },
+    };
+  },
+};
+
 const isConstAssertion = (node: Node) => {
   const annotation = child(node, "typeAnnotation");
   return annotation?.type === "TSTypeReference" && name(child(annotation, "typeName")) === "const";
@@ -265,6 +298,7 @@ export const rules = {
   "no-define-proof": noDefineProof,
   "no-exported-prover": noExportedProver,
   "no-proof-assertion": noProofAssertion,
+  "no-name-rebind": noNameRebind,
   "no-type-assertion": noTypeAssertion,
   "no-any": noAny,
 };

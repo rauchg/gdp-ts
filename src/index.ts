@@ -21,9 +21,13 @@
  *    cannot be called with a proof about a different project or user, with a
  *    raw id, or with no proof at all.
  *
- * Nothing here is a theorem prover. The guarantee is practical: the honest path
- * never needs a type assertion, so forging a proof requires `as`/`any`, which
- * you can lint for and which stands out in review.
+ * Nothing here is a theorem prover. The guarantee is practical: the honest
+ * path never needs a type assertion, so forging a proof requires `as`/`any`
+ * or one of a short list of equivalent constructs (`let p!:`, `declare`,
+ * `null!`, module augmentation, spread-rebinding a `Named`) — all of which
+ * the lint preset flags. What neither the types nor the lint can see is an
+ * `any` that arrives from outside (`JSON.parse`, an untyped `req.body`):
+ * keep those away from proof parameters. See the skill's limits.md.
  */
 
 declare const NAME: unique symbol;

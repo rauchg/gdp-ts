@@ -88,7 +88,7 @@ Lint presets, for the gaps the type system cannot close ([recipe step 6](referen
 |---|---|
 | `@gdp-ts/core/lint/eslint` | `gdp(options?)`: ESLint flat-config entries. Spread after your typescript-eslint config. |
 | `@gdp-ts/core/lint/oxlint` | `gdp(options?)`: an Oxlint config (works on TypeScript 7). |
-| `@gdp-ts/core/lint/plugin` | The rules themselves (`gdp-ts/no-define-proof`, `no-exported-prover`, `no-proof-assertion`, `no-type-assertion`, `no-any`), for custom setups. |
+| `@gdp-ts/core/lint/plugin` | The rules themselves (`gdp-ts/no-define-proof`, `no-exported-prover`, `no-proof-assertion`, `no-null-assertion`, `no-name-rebind`, `no-type-assertion`, `no-any`), for custom setups. |
 
 Options: `proofs` (trusted-module globs, default `**/proofs/**`), `strict`
 (also ban every `as` and `any` outside them, default `false`),
