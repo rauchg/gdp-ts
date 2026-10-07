@@ -171,3 +171,4 @@ for (const { entry } of targets) {
   console.log(`${entry.label} ${entry.project}: ${entry.error ? "FAILED" : JSON.stringify(entry.median)}`);
 }
 writeFileSync(resultsFile, JSON.stringify(results, null, 2) + "\n");
+process.exitCode = targets.some(({ entry }) => entry.error !== null) ? 1 : 0;
