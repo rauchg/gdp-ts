@@ -112,7 +112,12 @@ export function name(...args: unknown[]): unknown {
 export interface Proof<in out Kind extends string, in out About extends readonly unknown[]> {
   readonly kind: Kind;
   // Phantom, structurally invariant for the same reason as `Named[NAME]`.
-  readonly [ABOUT]: (about: About) => About;
+  // `kind` appears as a parameter so the slot also pins the proof's Kind:
+  // without it, `{ ...weakProof, kind: "StrongKind" }` would spread a valid
+  // `[ABOUT]` slot (it depends only on `About`) and typecheck as an escalated
+  // proof. With it, the copied slot's contravariant `kind` parameter rejects
+  // the different kind.
+  readonly [ABOUT]: (about: About, kind: Kind) => About;
 }
 
 /** The names of a tuple of `Named` values: `[Named<U, X>, Named<P, Y>]` -> `[U, P]`. */

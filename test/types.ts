@@ -270,7 +270,11 @@ name(projectA, userId, (project, user) => {
   const forgedProof: UserIsProjectAdmin<NameOf<typeof user>, NameOf<typeof project>> = { kind: "UserIsProjectAdmin" };
   // @ts-expect-error a different kind is a different proof
   const wrongKind: UserIsProjectAdmin<NameOf<typeof user>, NameOf<typeof project>> = UserHasProjectAccess.prove(user, project);
-  void forgedName, forgedProof, wrongKind;
+  const access = userHasProjectAccess(user, project);
+  if (!access) return;
+  // @ts-expect-error spreading a weaker proof and overriding `kind` does not escalate it
+  const escalated: UserIsProjectAdmin<NameOf<typeof user>, NameOf<typeof project>> = { ...access, kind: "UserIsProjectAdmin" };
+  void forgedName, forgedProof, wrongKind, escalated;
 });
 
 // --- alternative: type aliases work too, but then use NoInfer --------------
