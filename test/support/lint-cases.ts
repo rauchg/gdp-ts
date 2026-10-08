@@ -31,6 +31,27 @@ export const lintCases: LintCase[] = [
     targeted: [r("no-define-proof")],
     strict: [r("no-define-proof")],
   },
+  {
+    name: "re-exporting the whole package through a barrel file outside proofs/",
+    filePath: "src/lib/gdp.ts",
+    code: `export * from "@gdp-ts/core";\n`,
+    targeted: [r("no-define-proof")],
+    strict: [r("no-define-proof")],
+  },
+  {
+    name: "re-exporting defineProof under another name through a barrel file outside proofs/",
+    filePath: "src/lib/gdp.ts",
+    code: `export { defineProof as mint } from "@gdp-ts/core";\n`,
+    targeted: [r("no-define-proof")],
+    strict: [r("no-define-proof")],
+  },
+  {
+    name: "re-exporting an unrelated name through a barrel file outside proofs/",
+    filePath: "src/lib/gdp.ts",
+    code: `export { name } from "@gdp-ts/core";\n`,
+    targeted: [],
+    strict: [],
+  },
 
   // --- leaking the prover ---------------------------------------------------
   {

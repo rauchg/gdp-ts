@@ -122,6 +122,24 @@ const noDefineProof: RuleModule = {
           context.report({ node, message: "Only modules in proofs/ may call defineProof." });
         }
       },
+      // A barrel file (`export * from "@gdp-ts/core"` or
+      // `export { defineProof as x } from "@gdp-ts/core"`) hands defineProof
+      // to anyone who imports from the barrel instead of the package, which
+      // the two checks above never see. Catch it at the barrel itself.
+      ExportAllDeclaration(node) {
+        if (sourceOf(node) === PACKAGE && node["exportKind"] !== "type") {
+          context.report({ node, message: 'Only modules in proofs/ may import defineProof. This re-exports everything from "@gdp-ts/core", including defineProof.' });
+        }
+      },
+      ExportNamedDeclaration(node) {
+        if (sourceOf(node) !== PACKAGE || node["exportKind"] === "type") return;
+        for (const specifier of children(node, "specifiers")) {
+          if (specifier["exportKind"] === "type") continue;
+          if (name(child(specifier, "local")) === "defineProof") {
+            context.report({ node: specifier, message: "Only modules in proofs/ may import defineProof." });
+          }
+        }
+      },
     };
   },
 };
