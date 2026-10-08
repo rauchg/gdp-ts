@@ -232,14 +232,31 @@ proof stand out, and gdp-ts ships lint rules that make them errors. They run
 under ESLint and under Oxlint (which needs no TypeScript compiler API, so it
 works on TypeScript 7).
 
-ESLint, after your typescript-eslint setup:
+ESLint, after your typescript-eslint setup. `tseslint.configs.recommended`
+alone flags the recipe's own proof code: `no-empty-object-type` on
+`interface X<P> extends Proof<...> {}` (step 2) and `no-unused-vars` on a
+`_proof` parameter nothing else uses (step 4). Add the two overrides below
+to keep those quiet; `examples/express-basic/eslint.config.js` runs the
+exact same two.
 
 ```js
 // eslint.config.js
 import gdp from "@gdp-ts/core/lint/eslint";
 import tseslint from "typescript-eslint";
 
-export default [...tseslint.configs.recommended, ...gdp()];
+export default [
+  ...tseslint.configs.recommended,
+  {
+    files: ["**/*.ts"],
+    rules: {
+      // `interface X<P> extends Proof<"X", [P]> {}` is the proof recipe.
+      "@typescript-eslint/no-empty-object-type": ["error", { allowInterfaces: "with-single-extends" }],
+      // Proof parameters are frequently unused at runtime; name them `_proof`.
+      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    },
+  },
+  ...gdp(),
+];
 ```
 
 Oxlint:
