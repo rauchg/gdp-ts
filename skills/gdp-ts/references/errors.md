@@ -2,9 +2,10 @@
 
 From [`examples/basic/src/mistakes.ts`](https://github.com/rauchg/gdp-ts/blob/main/examples/basic/src/mistakes.ts),
 plus the last line, from the library's [`test/types.ts`](https://github.com/rauchg/gdp-ts/blob/main/test/types.ts).
-Each commented line is a compile error. Both files mark them with
-`@ts-expect-error` and are part of the typecheck, so `pnpm check` fails if any
-of them ever stops being one.
+Each commented line is a compile error with the
+[required compiler options](limits.md#compiler-options) enabled. Both files
+mark them with `@ts-expect-error` and are part of the typecheck, so `pnpm check`
+fails if any of them ever stops being one.
 
 A `mistakes.ts` like this is worth keeping in your own codebase: a file that
 is type-checked but never run, where each near-miss is one line under

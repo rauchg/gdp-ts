@@ -3,6 +3,23 @@
 TypeScript is not Haskell, and this is not a proof assistant. Be clear-eyed
 about the boundary:
 
+## Compiler options
+
+The guarantees below assume TypeScript 5.4 or newer with
+`strictFunctionTypes` and `strictNullChecks` enabled. Prefer `"strict": true`
+in `tsconfig.json` and do not explicitly override either option with `false`.
+
+- With `strictFunctionTypes: false`, a proof can escape a `name()` callback,
+  and a proof with `never` names can be accepted through a union target.
+- With `strictNullChecks: false`, a `Proof | null` can be passed where a proof
+  is required without handling the failed-check case.
+
+Enabling both options explicitly preserves these checks without enabling all
+other `strict` checks. The lint preset's `strict` option is separate and does
+not configure the TypeScript compiler.
+
+## Other limits
+
 | Concern | Haskell | TypeScript, with gdp-ts |
 |---|---|---|
 | Forging a proof | Impossible outside the trusted module | `{} as UserIsProjectAdmin<U, P>` compiles. The honest path never needs `as`, so the [lint preset](recipe.md#6-turn-on-the-lint-preset) flags assertions to proof types (and, in strict mode, every `as`/`any` outside `proofs/`). Review that directory with care. |
