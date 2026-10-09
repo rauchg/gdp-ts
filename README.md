@@ -20,7 +20,19 @@ $ npx skills add rauchg/gdp-ts
 $ pnpm add @gdp-ts/core
 ```
 
-Requires TypeScript 5.4 or newer.
+Requires TypeScript 5.4 or newer with `strictFunctionTypes` and
+`strictNullChecks` enabled. We recommend `"strict": true` in `tsconfig.json`:
+
+```json
+{
+  "compilerOptions": {
+    "strict": true
+  }
+}
+```
+
+`"strict": true` enables both unless either is explicitly overridden with
+`false`. See [compiler requirements and limits](skills/gdp-ts/references/limits.md#compiler-options).
 
 ## The problem
 

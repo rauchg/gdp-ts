@@ -21,6 +21,16 @@ the check, or with a check about a different value, does not compile.
 This is not a theorem prover. Prove the facts whose absence would be an
 incident, and stop there ([where to stop](references/where-to-stop.md)).
 
+## Compiler options
+
+Use TypeScript 5.4 or newer with `strictFunctionTypes` and `strictNullChecks`
+enabled. We recommend `"strict": true` in `tsconfig.json`; check that neither
+option is explicitly overridden with `false`.
+
+These compiler options are separate from the lint preset's `strict` option.
+See [compiler requirements and limits](references/limits.md#compiler-options)
+for the guarantees that depend on them.
+
 ## Workflow
 
 When adding or changing authorization in a codebase that uses this pattern:
