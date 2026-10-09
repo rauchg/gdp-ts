@@ -108,7 +108,13 @@ function param(req: Request, key: string): string {
 function readCookie(req: Request, key: string): string | undefined {
   for (const part of req.header("cookie")?.split(";") ?? []) {
     const [k, ...v] = part.trim().split("=");
-    if (k === key) return decodeURIComponent(v.join("="));
+    if (k === key) {
+      try {
+        return decodeURIComponent(v.join("="));
+      } catch {
+        throw new HttpError(400, "Invalid protection cookie");
+      }
+    }
   }
   return undefined;
 }
@@ -137,6 +143,11 @@ function parseChange(body: unknown): ProtectionChange {
 }
 
 const onError: ErrorRequestHandler = (error, _req, res, _next) => {
+  if (error?.type === "entity.parse.failed" || error?.type === "entity.too.large") {
+    const tooLarge = error.type === "entity.too.large";
+    res.status(tooLarge ? 413 : 400).json({ error: tooLarge ? "Request body too large" : "Invalid JSON" });
+    return;
+  }
   if (error instanceof HttpError) {
     res.status(error.status).json({ error: error.message });
     return;

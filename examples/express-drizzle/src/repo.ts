@@ -95,14 +95,9 @@ export async function readSite<H>(url: Named<H, Host>, _proof: CanVisitUrl<H>): 
   return row;
 }
 
-export async function insertToken<H>(url: Named<H, Host>, _proof: PasswordAccepted<H>): Promise<string> {
+export async function insertToken<H>(url: Named<H, Host>, proof: PasswordAccepted<H>): Promise<string> {
   const token = randomUUID();
-  await db.insert(protectionTokens).select(
-    db
-      .select({ token: sql<string>`${token}`.as("token"), host: urls.host, passwordVersion: projects.passwordVersion })
-      .from(urls)
-      .innerJoin(projects, eq(projects.id, urls.projectId))
-      .where(eq(urls.host, url.value)),
-  );
+  // Bind the token to the version checked, even if the password changed meanwhile.
+  await db.insert(protectionTokens).values({ token, host: url.value, passwordVersion: proof.passwordVersion });
   return token;
 }

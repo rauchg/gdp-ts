@@ -9,11 +9,15 @@ import type { Host } from "../lib/ids.ts";
 
 const PasswordAccepted = defineProof("PasswordAccepted");
 /** A visitor supplied the current password for URL `H`. */
-export interface PasswordAccepted<H> extends Proof<"PasswordAccepted", [H]> {}
+export interface PasswordAccepted<H> extends Proof<"PasswordAccepted", [H]> {
+  readonly passwordVersion: number;
+}
 
 export async function passwordAccepted<H>(url: Named<H, Host>, password: string): Promise<PasswordAccepted<H> | null> {
   const row = await db.getUrl(url.value);
   const project = row ? await db.getProject(row.projectId) : undefined;
   const setting = project?.passwordProtection;
-  return setting && verifyPassword(password, setting.passwordHash) ? PasswordAccepted.prove(url) : null;
+  return project && setting && verifyPassword(password, setting.passwordHash)
+    ? Object.freeze({ ...PasswordAccepted.prove(url), passwordVersion: project.passwordVersion })
+    : null;
 }

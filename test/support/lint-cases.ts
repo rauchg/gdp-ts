@@ -32,6 +32,21 @@ export const lintCases: LintCase[] = [
     strict: [r("no-define-proof")],
   },
 
+  {
+    name: "calling defineProof through static bracket access outside proofs/",
+    filePath: "src/app.ts",
+    code: `import * as gdp from "@gdp-ts/core";\nexport const kind = gdp["defineProof"]("Forged").kind;\n`,
+    targeted: [r("no-define-proof")],
+    strict: [r("no-define-proof")],
+  },
+  {
+    name: "computed identifiers are not property names",
+    filePath: "src/app.ts",
+    code: `import * as gdp from "@gdp-ts/core";\nconst defineProof = "name";\nexport const value = gdp[defineProof]("id", (id) => id.value);\n`,
+    targeted: [],
+    strict: [],
+  },
+
   // --- leaking the prover ---------------------------------------------------
   {
     name: "exporting a prover",
@@ -51,6 +66,21 @@ export const lintCases: LintCase[] = [
     name: "default-exporting a prover",
     filePath: "src/proofs/forged.ts",
     code: `import { defineProof } from "@gdp-ts/core";\nexport default defineProof("Forged");\n`,
+    targeted: [r("no-exported-prover")],
+    strict: [r("no-exported-prover")],
+  },
+
+  {
+    name: "exporting a prover created through static bracket access",
+    filePath: "src/proofs/forged.ts",
+    code: `import * as gdp from "@gdp-ts/core";\nexport const Forged = gdp["defineProof"]("Forged");\n`,
+    targeted: [r("no-exported-prover")],
+    strict: [r("no-exported-prover")],
+  },
+  {
+    name: "re-exporting a prover created through static bracket access",
+    filePath: "src/proofs/forged.ts",
+    code: `import * as gdp from "@gdp-ts/core";\nconst Forged = gdp["defineProof"]("Forged");\nexport { Forged };\n`,
     targeted: [r("no-exported-prover")],
     strict: [r("no-exported-prover")],
   },
