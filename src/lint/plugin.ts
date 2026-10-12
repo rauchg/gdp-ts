@@ -73,7 +73,9 @@ const isDefineProofCall = (node: Node | undefined, defineProof: Set<string>, nam
   return (
     callee?.type === "MemberExpression" &&
     namespaces.has(name(child(callee, "object")) ?? "") &&
-    name(child(callee, "property")) === "defineProof"
+    (callee["computed"]
+      ? child(callee, "property")?.["value"] === "defineProof"
+      : name(child(callee, "property")) === "defineProof")
   );
 };
 
