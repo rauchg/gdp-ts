@@ -117,3 +117,31 @@ test("unknown projects and URLs are 404; malformed changes 400", async () => {
   assert.equal((await call("GET", "/sites/nope.example")).status, 404);
   assert.equal((await call("PATCH", settings("acme-docs"), { as: "alice", body: enable("all", "") })).status, 400);
 });
+
+
+test("malformed JSON is a client error", async () => {
+  const res = await fetch(base + settings("acme-docs"), {
+    method: "PATCH",
+    headers: { authorization: "Bearer alice", "content-type": "application/json" },
+    body: '{"passwordProtection":',
+  });
+  assert.equal(res.status, 400);
+  assert.deepEqual(await res.json(), { error: "Invalid JSON" });
+});
+
+test("a malformed protection cookie is rejected as a client error", async () => {
+  const res = await call("GET", "/sites/acme-shop-git-redesign.vercel.app", { cookie: "protection_token=%" });
+  assert.equal(res.status, 400);
+  assert.deepEqual(await res.json(), { error: "Invalid protection cookie" });
+});
+
+
+test("an oversized JSON body is a client error", async () => {
+  const res = await fetch(base + settings("acme-docs"), {
+    method: "PATCH",
+    headers: { authorization: "Bearer alice", "content-type": "application/json" },
+    body: JSON.stringify({ passwordProtection: { deploymentType: "all", password: "x".repeat(110 * 1024) } }),
+  });
+  assert.equal(res.status, 413);
+  assert.deepEqual(await res.json(), { error: "Request body too large" });
+});
