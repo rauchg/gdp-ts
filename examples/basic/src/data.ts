@@ -74,9 +74,7 @@ export async function servePage<H>(url: Named<H, Host>, _proof: CanVisitUrl<H>):
 }
 
 /** Issue a token for URL `H` only. Impossible without the password check for `H`. */
-export async function issueToken<H>(url: Named<H, Host>, _proof: PasswordAccepted<H>): Promise<string> {
-  const row = await db.getUrl(url.value);
-  const project = row ? await db.getProject(row.projectId) : undefined;
-  if (!project) throw new Error(`issueToken: unknown URL ${url.value}`);
-  return db.insertToken(url.value, project.passwordVersion);
+export async function issueToken<H>(url: Named<H, Host>, proof: PasswordAccepted<H>): Promise<string> {
+  // Bind the token to the version checked, even if the password changed meanwhile.
+  return db.insertToken(url.value, proof.passwordVersion);
 }
