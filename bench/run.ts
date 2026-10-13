@@ -171,3 +171,6 @@ for (const { entry } of targets) {
   console.log(`${entry.label} ${entry.project}: ${entry.error ? "FAILED" : JSON.stringify(entry.median)}`);
 }
 writeFileSync(resultsFile, JSON.stringify(results, null, 2) + "\n");
+
+// A failed target still gets its diagnostics recorded above; it should not also read as success.
+if (targets.some((t) => t.entry.error)) process.exitCode = 1;
