@@ -31,6 +31,20 @@ export const lintCases: LintCase[] = [
     targeted: [r("no-define-proof")],
     strict: [r("no-define-proof")],
   },
+  {
+    name: "calling defineProof through a static computed property outside proofs/",
+    filePath: "src/app.ts",
+    code: `import * as gdp from "@gdp-ts/core";\nexport const kind = gdp["defineProof"]("Forged").kind;\n`,
+    targeted: [r("no-define-proof")],
+    strict: [r("no-define-proof")],
+  },
+  {
+    name: "a computed property whose variable merely spells like defineProof is not a call to it",
+    filePath: "src/app.ts",
+    code: `import * as gdp from "@gdp-ts/core";\nconst defineProof = "kind";\nexport const kind = gdp[defineProof]("Forged").kind;\n`,
+    targeted: [],
+    strict: [],
+  },
 
   // --- leaking the prover ---------------------------------------------------
   {
@@ -46,6 +60,20 @@ export const lintCases: LintCase[] = [
     code: `import { defineProof } from "@gdp-ts/core";\nconst Forged = defineProof("Forged");\nexport { Forged };\n`,
     targeted: [r("no-exported-prover")],
     strict: [r("no-exported-prover")],
+  },
+  {
+    name: "exporting a prover minted through a static computed property",
+    filePath: "src/proofs/forged.ts",
+    code: `import * as gdp from "@gdp-ts/core";\nexport const Forged = gdp["defineProof"]("Forged");\n`,
+    targeted: [r("no-exported-prover")],
+    strict: [r("no-exported-prover")],
+  },
+  {
+    name: "a computed property whose variable merely spells like defineProof does not mint a prover",
+    filePath: "src/proofs/forged.ts",
+    code: `import * as gdp from "@gdp-ts/core";\nconst defineProof = "kind";\nexport const Forged = gdp[defineProof]("Forged");\n`,
+    targeted: [],
+    strict: [],
   },
   {
     name: "default-exporting a prover",

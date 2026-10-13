@@ -66,6 +66,18 @@ function* walk(node: Node): Generator<Node> {
   }
 }
 
+/**
+ * The static name of a member's property: the identifier for `obj.prop`, or
+ * the string value for a computed literal access like `obj["prop"]`. A
+ * computed access through anything else (a variable, a template, a call) has
+ * no static name, regardless of what that expression happens to be spelled -
+ * its value is not known without evaluating it.
+ */
+const staticPropertyName = (property: Node | undefined, computed: unknown): string | undefined => {
+  if (!computed) return name(property);
+  return property?.type === "Literal" && typeof property["value"] === "string" ? property["value"] : undefined;
+};
+
 const isDefineProofCall = (node: Node | undefined, defineProof: Set<string>, namespaces: Set<string>): boolean => {
   if (node?.type !== "CallExpression") return false;
   const callee = child(node, "callee");
@@ -73,7 +85,7 @@ const isDefineProofCall = (node: Node | undefined, defineProof: Set<string>, nam
   return (
     callee?.type === "MemberExpression" &&
     namespaces.has(name(child(callee, "object")) ?? "") &&
-    name(child(callee, "property")) === "defineProof"
+    staticPropertyName(child(callee, "property"), callee["computed"]) === "defineProof"
   );
 };
 
