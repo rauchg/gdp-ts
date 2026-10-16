@@ -232,14 +232,26 @@ proof stand out, and gdp-ts ships lint rules that make them errors. They run
 under ESLint and under Oxlint (which needs no TypeScript compiler API, so it
 works on TypeScript 7).
 
-ESLint, after your typescript-eslint setup:
+ESLint, after your typescript-eslint setup. The two rule overrides below are for the recipe's
+own shapes, not for gdp-ts: an empty proof interface (`interface X<P> extends Proof<"X", [P]> {}`)
+and a trailing proof parameter that is usually unused at runtime (name it `_proof`), both from
+step 2 and step 4 above:
 
 ```js
 // eslint.config.js
 import gdp from "@gdp-ts/core/lint/eslint";
 import tseslint from "typescript-eslint";
 
-export default [...tseslint.configs.recommended, ...gdp()];
+export default [
+  ...tseslint.configs.recommended,
+  {
+    rules: {
+      "@typescript-eslint/no-empty-object-type": ["error", { allowInterfaces: "with-single-extends" }],
+      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    },
+  },
+  ...gdp(),
+];
 ```
 
 Oxlint:

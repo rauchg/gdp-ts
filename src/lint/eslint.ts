@@ -5,7 +5,18 @@
  *   import tseslint from "typescript-eslint";
  *   import gdp from "@gdp-ts/core/lint/eslint";
  *
- *   export default [...tseslint.configs.recommended, ...gdp()];
+ *   export default [
+ *     ...tseslint.configs.recommended,
+ *     {
+ *       rules: {
+ *         // the recipe's proof interface, `interface X<P> extends Proof<"X", [P]> {}`
+ *         "@typescript-eslint/no-empty-object-type": ["error", { allowInterfaces: "with-single-extends" }],
+ *         // the recipe's trailing proof parameter, usually unused at runtime; name it `_proof`
+ *         "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+ *       },
+ *     },
+ *     ...gdp(),
+ *   ];
  *
  * See `GdpLintOptions` for `proofs`, `strict` and friends.
  */
